@@ -1,12 +1,18 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const mongoose = require('mongoose'); //
+const bcrypt = require('bcrypt'); //
 
-const SALT_ROUNDS = 6;
+const SALT_ROUNDS = 6; //
 
 const userSchema = new mongoose.Schema({
   username: {type: String, required: true, lowercase: true, unique: true},
   email: {type: String, required: true, lowercase: true, unique: true},
   password: String,
+  fullName: String,
+  location: String,
+  linkedin: String, 
+  facebook: String, 
+  instagram: String, 
+  twitter: String, 
   photoUrl: String, 
   bio: String
 }, {
@@ -31,7 +37,7 @@ userSchema.set('toObject', {
 
 // DO NOT DEFINE instance methods with arrow functions, 
 // they prevent the binding of this
-userSchema.pre('save', function(next) {
+userSchema.pre('save', function(next) { //
   // 'this' will be set to the current document
   const user = this;
   // check to see if the user has been modified, if not proceed 
@@ -46,7 +52,7 @@ userSchema.pre('save', function(next) {
   });
 });
 
-userSchema.methods.comparePassword = function(tryPassword, cb) {
+userSchema.methods.comparePassword = function(tryPassword, cb) { //
     console.log(cb, ' this is cb')
   // 'this' represents the document that you called comparePassword on
   bcrypt.compare(tryPassword, this.password, function(err, isMatch) {

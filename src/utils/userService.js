@@ -3,32 +3,37 @@ import tokenService from './tokenService';
 const BASE_URL = '/api/users/';
 
 function signup(user) {
-  return fetch(BASE_URL + 'signup', {
-    method: 'POST',
-    headers: new Headers({'Content-Type': 'application/json'}),  // If you are sending a file/photo over
-    // what do datatype do you need to change this too?
-    body: JSON.stringify(user)
-  })
-  .then(res => {
-    if (res.ok) return res.json();
-    // Probably a duplicate email
-    throw new Error('Email already taken!');
-  })
-  // Parameter destructuring!
-  .then(({token}) => tokenService.setToken(token));
+  return (
+    fetch(BASE_URL + "signup", {
+      method: "POST",
+      // headers: new Headers({'Content-Type': 'multipart/formData'}), < --- Browser sets this automatically
+      // headers: new Headers({'Content-Type': 'application/json'}),  // If you are sending a file/photo over
+      // Can remove the headers, and I browser will automatically apply the multipart/formData header for us
+      body: user, // < user should be formData, signup page, userService.signup(formData)
+    })
+      .then((res) => {
+        if (res.ok) return res.json();
+        // Probably a duplicate email
+        console.log(
+          "if you have an error, you must check your server terminal!"
+        );
+        throw new Error("Email already taken!");
+      })
+      // Parameter destructuring!
+      .then(({ token }) => tokenService.setToken(token))
+  );
   // The above could have been written as
   //.then((token) => token.token);
 }
-
-function getUser() {
+function getUser() { //
   return tokenService.getUserFromToken();
 }
 
-function logout() {
+function logout() { //
   tokenService.removeToken();
 }
 
-function login(creds) {
+function login(creds) { //
   return fetch(BASE_URL + 'login', {
     method: 'POST',
     headers: new Headers({'Content-Type': 'application/json'}),
@@ -42,7 +47,7 @@ function login(creds) {
   .then(({token}) => tokenService.setToken(token));
 }
 
-export default {
+export default { //
   signup, 
   getUser,
   logout,
