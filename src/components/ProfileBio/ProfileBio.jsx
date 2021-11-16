@@ -18,8 +18,27 @@ export default function ProfileBio({ user }) {
         </Grid.Column>
         <Grid.Column textAlign="left" style={{ maxWidth: 450 }}>
           <Segment vertical>
-            <h3>{user.username}</h3>
+            <h3>Username: {user.username}</h3>
           </Segment>
+          <Segment vertical>
+            <h3>Name: {user.fullName}</h3>
+          </Segment>
+          <Segment vertical>
+            <h3>Location: {user.location}</h3>
+          </Segment>
+          <Segment vertical>
+          <h3><a href={user.linkedin}>LinkedIn</a></h3>
+          </Segment>
+          <Segment vertical>
+          <h3><a href={user.facebook}>Facebook</a></h3>
+          </Segment>
+          <Segment vertical>
+          <h3><a href={user.instagram}>Instagram</a></h3>
+          </Segment>
+          <Segment vertical>
+          <h3><a href={user.twitter}>Twitter</a></h3>
+          </Segment>
+          
           <Segment>
             <span> Bio: {user.bio}</span>
           </Segment>
