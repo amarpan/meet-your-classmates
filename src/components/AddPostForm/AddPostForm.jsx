@@ -144,6 +144,7 @@ export default function AddSurveyForm(props) {
               label="Upload a picture of something you referenced in your survey"
               placeholder="Upload a picture of one of your favorite things in your survey"
               onChange={handleFileInput}
+              required
             />
             <Button type="submit" className="btn">
               ADD SURVEY
