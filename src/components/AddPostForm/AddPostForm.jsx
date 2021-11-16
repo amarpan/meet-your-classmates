@@ -88,6 +88,7 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
+              size="mini"
               className="form-control"
               name="a1"
               label={rand1}
@@ -106,6 +107,7 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
+              size="mini"
               className="form-control"
               name="a2"
               label={rand2}
@@ -124,6 +126,7 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
+              size="mini"
               className="form-control"
               name="a3"
               label={rand3}
@@ -134,6 +137,7 @@ export default function AddSurveyForm(props) {
             />
             
             <Form.Input // take this whole thing out if possible
+              size="mini"
               className="form-control"
               type="file"
               name="photo"

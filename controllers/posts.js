@@ -1,8 +1,7 @@
 const Post = require("../models/post");
 const S3 = require("aws-sdk/clients/s3");
-const { v4: uuidv4 } = require("uuid"); // import uuid to generate random ID's
-
 const s3 = new S3(); // initialize s3 constructor
+const { v4: uuidv4 } = require("uuid"); // import uuid to generate random ID's
 
 const BUCKET_NAME = process.env.BUCKET_NAME;
 

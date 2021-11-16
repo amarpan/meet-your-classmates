@@ -38,7 +38,7 @@ function PostCard({ post, isProfile, user }) {
           <Card.Header>
             <Link to={`/${post.user.username}`}>
               <Image
-                size="small"
+                size="large"
                 avatar
                 src={
                   post.user.photoUrl
