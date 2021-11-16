@@ -1,0 +1,116 @@
+import React, { useState } from "react";
+
+import { Button, Form, Grid, Header, Image, Segment } from "semantic-ui-react";
+
+export default function AddSurveyForm(props) {
+  const [selectedFile, setSelectedFile] = useState("");
+  const [state, setState] = useState({
+    q1: "",
+    a1: "",
+    q2: "",
+    a2: "",
+    q3: "",
+    a3: ""
+  });
+
+  function handleFileInput(e) {
+    setSelectedFile(e.target.files[0]);
+  }
+
+  function handleChange(e) {
+    setState({
+      ...state,
+      [e.target.name]: e.target.value,
+    });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append("photo", selectedFile);
+    formData.append("q1", state.q1);
+    formData.append("a1", state.a1);
+    formData.append("q2", state.q2);
+    formData.append("a2", state.a2);
+    formData.append("q3", state.q3);
+    formData.append("a3", state.a3);
+    props.handleAddPost(formData); // calling our function!
+
+    // Have to submit the form now! We need a function!
+  }
+
+  return (
+    <Grid textAlign="center" style={{ height: "25vh" }} verticalAlign="middle">
+      <Grid.Column style={{ maxWidth: 450 }}>
+        <Segment>
+          <Form size="mini" autoComplete="off" onSubmit={handleSubmit}>
+            <Form.Input
+              className="form-control"
+              name="q1"
+              value={state.q1}
+              onChange={handleChange}
+              label="Question #1"
+              placeholder="Sample question 1?"
+              readOnly
+            />
+            <Form.Input
+              className="form-control"
+              name="a1"
+              value={state.a1}
+              placeholder="Answer to Question #1"
+              onChange={handleChange}
+              required
+            />
+            <Form.Input
+              className="form-control"
+              name="q2"
+              value={state.q2}
+              onChange={handleChange}
+              label="Question #2"
+              placeholder="Sample question 2?"
+              readOnly
+            />
+            <Form.Input
+              className="form-control"
+              name="a2"
+              value={state.a2}
+              placeholder="Answer to Question #2"
+              onChange={handleChange}
+              required
+            />
+            <Form.Input
+              className="form-control"
+              name="q3"
+              value={state.q3}
+              onChange={handleChange}
+              label="Question #3"
+              placeholder="Sample question 3?"
+              readOnly
+            />
+            <Form.Input
+              className="form-control"
+              name="a3"
+              value={state.a3}
+              placeholder="Answer to Question #3"
+              onChange={handleChange}
+              required
+            />
+            
+            <Form.Input // take this whole thing out if possible
+              className="form-control"
+              type="file"
+              name="photo"
+              label="Upload a picture of something you referenced in your survey"
+              placeholder="Upload a picture of one of your favorite things in your survey"
+              onChange={handleFileInput}
+            />
+            <Button type="submit" className="btn">
+              ADD SURVEY
+            </Button>
+          </Form>
+        </Segment>
+      </Grid.Column>
+    </Grid>
+  );
+}
