@@ -2,14 +2,33 @@ import React, { useState } from "react";
 
 import { Button, Form, Grid, Header, Image, Segment } from "semantic-ui-react";
 
+let questions = [
+    "Age",
+    "Sex",
+    "Location",
+    "Gender",
+    "Nickname"
+]
+
+function getRand(min, max){
+    return Math.floor(Math.random() * (max-min) ) + min; 
+}
+
+let rand1 = questions[getRand(0,5)]  
+let rand2 = questions[getRand(0,5)]  
+let rand3 = questions[getRand(0,5)]  
+
 export default function AddSurveyForm(props) {
+
+  
+  
   const [selectedFile, setSelectedFile] = useState("");
   const [state, setState] = useState({
-    q1: "",
+    q1: rand1,
     a1: "",
-    q2: "",
+    q2: rand2,
     a2: "",
-    q3: "",
+    q3: rand3,
     a3: ""
   });
 
@@ -37,6 +56,20 @@ export default function AddSurveyForm(props) {
     formData.append("a3", state.a3);
     props.handleAddPost(formData); // calling our function!
 
+    rand1 = questions[getRand(0,5)]  
+    rand2 = questions[getRand(0,5)]  
+    rand3 = questions[getRand(0,5)] 
+
+    setState({
+        q1: rand1,
+        a1: "",
+        q2: rand2,
+        a2: "",
+        q3: rand3,
+        a3: ""
+    })
+        
+
     // Have to submit the form now! We need a function!
   }
 
@@ -45,7 +78,7 @@ export default function AddSurveyForm(props) {
       <Grid.Column style={{ maxWidth: 450 }}>
         <Segment>
           <Form size="mini" autoComplete="off" onSubmit={handleSubmit}>
-            <Form.Input
+            {/* <Form.Input
               className="form-control"
               name="q1"
               value={state.q1}
@@ -53,16 +86,17 @@ export default function AddSurveyForm(props) {
               label="Question #1"
               placeholder="Sample question 1?"
               readOnly
-            />
+            /> */}
             <Form.Input
               className="form-control"
               name="a1"
+              label={rand1}
               value={state.a1}
               placeholder="Answer to Question #1"
               onChange={handleChange}
               required
             />
-            <Form.Input
+            {/* <Form.Input
               className="form-control"
               name="q2"
               value={state.q2}
@@ -70,16 +104,17 @@ export default function AddSurveyForm(props) {
               label="Question #2"
               placeholder="Sample question 2?"
               readOnly
-            />
+            /> */}
             <Form.Input
               className="form-control"
               name="a2"
+              label={rand2}
               value={state.a2}
               placeholder="Answer to Question #2"
               onChange={handleChange}
               required
             />
-            <Form.Input
+            {/* <Form.Input
               className="form-control"
               name="q3"
               value={state.q3}
@@ -87,10 +122,11 @@ export default function AddSurveyForm(props) {
               label="Question #3"
               placeholder="Sample question 3?"
               readOnly
-            />
+            /> */}
             <Form.Input
               className="form-control"
               name="a3"
+              label={rand3}
               value={state.a3}
               placeholder="Answer to Question #3"
               onChange={handleChange}

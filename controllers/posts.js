@@ -25,7 +25,7 @@ function create(req, res) {
                 q1: req.body.q1,
                 a1: req.body.a1,
                 q2: req.body.q2,
-                q2: req.body.a2,
+                a2: req.body.a2,
                 q3: req.body.q3,
                 a3: req.body.a3,
                 user: req.user,
