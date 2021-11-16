@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import AddPostForm from "../../components/AddPostForm/AddPostForm";
+import AddPostForm from "../PostForm/PostForm";
 import PostFeed from "../../components/PostFeed/PostFeed";
 // import PostForm from "../../components/PostForm/PostForm";
 import Header from "../../components/Header/Header";

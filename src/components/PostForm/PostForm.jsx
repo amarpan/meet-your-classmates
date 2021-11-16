@@ -3,20 +3,24 @@ import React, { useState } from "react";
 import { Button, Form, Grid, Header, Image, Segment } from "semantic-ui-react";
 
 let questions = [
-    "Age",
-    "Sex",
-    "Location",
-    "Gender",
-    "Nickname"
+    "What does your computer setup look like?",
+    "What would be your dream job?",
+    "What is your favorite part about GA?",
+    "What has been the hardest part of GA for you so far?",
+    "What was your previous programming experience before GA?",
+    "If you were a fruit, what would you be and why?",
+    "Have you ever fallen asleep during a GA lecture?",
+    "Favorite programming language? ",
+    "Python or JavaScript?",
 ]
 
 function getRand(min, max){
     return Math.floor(Math.random() * (max-min) ) + min; 
 }
 
-let rand1 = questions[getRand(0,5)]  
-let rand2 = questions[getRand(0,5)]  
-let rand3 = questions[getRand(0,5)]  
+let rand1 = questions[getRand(0,9)]  
+let rand2 = questions[getRand(0,9)]  
+let rand3 = questions[getRand(0,9)]  
 
 export default function AddSurveyForm(props) {
 
@@ -88,7 +92,7 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
-              size="mini"
+              size="tiny"
               className="form-control"
               name="a1"
               label={rand1}
@@ -107,7 +111,7 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
-              size="mini"
+              size="tiny"
               className="form-control"
               name="a2"
               label={rand2}
@@ -126,7 +130,7 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
-              size="mini"
+              size="tiny"
               className="form-control"
               name="a3"
               label={rand3}

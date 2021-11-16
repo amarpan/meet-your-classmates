@@ -1,16 +1,19 @@
-import tokenService from './tokenService';
+import tokenService from "./tokenService";
 
-const BASE_URL = '/api/posts';
+const BASE_URL = "/api/posts/";
 
-export function create(post) {
-    return fetch(BASE_URL, {
-      method: 'POST',
-      body: post,
-      headers: {
-        'Authorization': 'Bearer ' + tokenService.getToken()
-      }
-    
-    }).then(res => res.json());
+export function create(post){
+	return fetch(BASE_URL, {
+		method: 'POST',
+		body: post, // <- this has an image so its formData, no need to jsonify
+		headers: {
+			'Authorization': 'Bearer ' + tokenService.getToken()
+		}
+	}).then(res => {
+		// Valid login if we have a status of 2xx (res.ok)
+		if (res.ok) return res.json();
+		throw new Error('Bad Credentials');
+	  })
 }
 
 export function getAll() {
@@ -26,4 +29,5 @@ export function getAll() {
 		throw new Error('bad Credentials');
 	  })
   }
+
 

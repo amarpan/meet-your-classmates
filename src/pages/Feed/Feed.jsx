@@ -1,37 +1,70 @@
 import React, { useState, useEffect } from "react";
-import AddPostForm from "../../components/AddPostForm/AddPostForm";
+import Loader from "../../components/Loader/Loader";
+import { Divider } from 'semantic-ui-react'
+import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import PostFeed from "../../components/PostFeed/PostFeed";
-// import PostForm from "../../components/PostForm/PostForm";
-import Header from "../../components/Header/Header";
-import Empty from "../../components/Empty/Empty"
-import * as postApi from "../../utils/postApi";
+import PostForm from "../../components/PostForm/PostForm";
+import * as postsApi from "../../utils/postApi";
+import * as likesApi from '../../utils/likesApi'
 
-import { Grid, Divider } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 export default function Feed(props) {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-
+  // Have a function that makes an api call to update the state
   async function handleAddPost(post) {
     try {
-      console.log(post);
-      const data = await postApi.create(post);
-      console.log(data.post, " This is new survey", data, " data variable");
-      // setPosts( posts => [data.post, ...posts])
+      setLoading(true);
+      const data = await postsApi.create(post); // our server is going to return
+      // the created post, that will be inside of data, which is the response from
+      // the server, we then want to set it in state
+      console.log(data, " this is response from the server, in handleAddPost");
       setPosts([data.post, ...posts]);
+      setLoading(false);
     } catch (err) {
       setError(err.message);
       console.log(err);
-      setError(err.message);
+	  setError(err.message)
     }
   }
 
+  async function addLike(postId){
+	  try {
+		  const data = await likesApi.create(postId);
+		  console.log(data, ' <- this is data the response from likes create')
+		  getPosts()
+
+	  } catch(err){
+		  console.log(err)
+		  setError(err.message)
+	  }
+  }
+
+  async function removeLike(likesId){
+	try {
+		const data = await likesApi.removeLike(likesId);
+		console.log(data, ' <- this is data the response from likes delete')
+		getPosts(false)
+
+	} catch(err){
+		console.log(err)
+		setError(err.message)
+	}	
+  }
+
+
+
+
   async function getPosts(showLoading) {
     try {
-      //   showLoading ? setLoading(true) : setLoading(false)
-      const data = await postApi.getAll();
+      
+
+	  showLoading ? setLoading(true) : setLoading(false)
+      const data = await postsApi.getAll();
       setPosts([...data.posts]);
-      //   setLoading(false);
+      setLoading(false);
     } catch (err) {
       setError(err.message);
       console.log(err, " this is the error");
@@ -43,37 +76,41 @@ export default function Feed(props) {
   }, []); // <- useEffect with the empty array this makes the getPosts function call when the component is loaded
   // on the page
 
+
+  // Always check the error before loading, because if there is an error
+  // we know something went wrong with the fetch call, therefore the http request 
+  // is complete
+  if (error) {
+    return <ErrorMessage error={error} />;
+  }
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
-    <Grid>
-       <Grid.Row>
+    <Grid centered>
+      <Grid.Row>
         <Grid.Column style={{ maxWidth: 450 }}>
-        </Grid.Column>
-      </Grid.Row>
-        <Grid.Row centered>
-        <Grid.Column style={{ maxWidth: 450}}>
-          <AddPostForm handleAddPost={handleAddPost} />
+          <PostForm handleAddPost={handleAddPost} />
           const DividerExampleDivider = () => <Divider />
           const DividerExampleDivider = () => <Divider />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
         <Grid.Column style={{ maxWidth: 450 }}>
-        </Grid.Column>
-      </Grid.Row>
-      <Grid.Row>
-        <Grid.Column>
+        
           <PostFeed
             posts={posts}
             isProfile={false}
-            numPhotosCol={10}
-            // loading={loading}
-            user={props.user}
-            // addLike={addLike}
-            // removeLike={removeLike}
+            numPhotosCol={1}
+            loading={loading}
+			user={props.user}
+			addLike={addLike}
+			removeLike={removeLike}
           />
         </Grid.Column>
       </Grid.Row>
-   
     </Grid>
   );
 }
