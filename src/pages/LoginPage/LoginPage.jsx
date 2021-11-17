@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./LoginPage.css";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import userService from "../../utils/userService";
-import {useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import {
   Button,
   Form,
@@ -11,6 +11,7 @@ import {
   Image,
   Message,
   Segment,
+  Icon,
 } from "semantic-ui-react";
 
 export default function LoginPage(props) {
@@ -52,8 +53,8 @@ export default function LoginPage(props) {
       >
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header as="h2" color="orange" textAlign="center">
-            <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" /> Log-in to your
-            account
+            <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
+            Log-in to your account
           </Header>
           <Form autoComplete="off" onSubmit={handleSubmit}>
             <Segment stacked>
@@ -74,13 +75,17 @@ export default function LoginPage(props) {
                 required
               />
               <Button
+                animated
                 color="orange"
                 fluid
                 size="large"
                 type="submit"
                 className="btn"
               >
-                Login
+                <Button.Content visible>Login</Button.Content>
+                <Button.Content hidden>
+                  <Icon name="arrow right" /> Ready to Login
+                </Button.Content>
               </Button>
             </Segment>
           </Form>
@@ -93,4 +98,3 @@ export default function LoginPage(props) {
     </>
   );
 }
-

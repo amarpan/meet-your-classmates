@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
-import { Button, Form, Grid, Header, Image, Segment } from "semantic-ui-react";
+import { Button, Form, Grid, Header, Image, Segment, Icon } from "semantic-ui-react";
 import userService from "../../utils/userService";
 import { useNavigate } from "react-router-dom";
 
@@ -160,8 +160,11 @@ export default function SignUpPage(props) {
                 onChange={handleFileInput}
               />
             </Form.Field>
-            <Button type="submit" className="btn" color="orange">
-              Signup
+            <Button animated type="submit" className="btn" color="orange">
+            <Button.Content visible>Sign-Up</Button.Content>
+      <Button.Content hidden>
+        <Icon name='arrow right' />Let's go!
+      </Button.Content>
             </Button>
           </Segment>
           {error ? <ErrorMessage error={error} /> : null}

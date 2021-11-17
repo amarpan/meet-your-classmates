@@ -27,6 +27,9 @@ export default function ProfileBio({ user }) {
             <h3>Location: {user.location}</h3>
           </Segment>
           <Segment vertical>
+            <h3>Email: {user.email}</h3>
+          </Segment>
+          <Segment vertical>
           <h3><a href={user.linkedin}>LinkedIn</a></h3>
           </Segment>
           <Segment vertical>

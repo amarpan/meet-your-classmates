@@ -54,11 +54,11 @@ function PostCard({ post, isProfile, user, removeLike, addLike }) {
       )}
       
       <Card.Content>
-        <Card.Description>{post.q1}</Card.Description>
+        <Card.Description><h4>{post.q1}</h4></Card.Description>
         <Card.Description>{post.a1}</Card.Description>
-        <Card.Description>{post.q2}</Card.Description>
+        <Card.Description><h4>{post.q2}</h4></Card.Description>
         <Card.Description>{post.a2}</Card.Description>
-        <Card.Description>{post.q3}</Card.Description>
+        <Card.Description><h4>{post.q3}</h4></Card.Description>
         <Card.Description>{post.a3}</Card.Description>
       </Card.Content>
       <Image centered style={{ width: 150}} src={`${post.photoUrl}`} wrapped ui={false} />

@@ -89,8 +89,8 @@ export default function Feed(props) {
   }
 
   return (
-    <Grid centered>
-      <Grid.Row>
+    <Grid>
+      <Grid.Row centered>
         <Grid.Column style={{ maxWidth: 450 }}>
           <PostForm handleAddPost={handleAddPost} />
           const DividerExampleDivider = () => <Divider />
@@ -98,12 +98,12 @@ export default function Feed(props) {
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column style={{ maxWidth: 450 }}>
+        <Grid.Column>
         
           <PostFeed
             posts={posts}
             isProfile={false}
-            numPhotosCol={1}
+            numPhotosCol={6}
             loading={loading}
 			user={props.user}
 			addLike={addLike}

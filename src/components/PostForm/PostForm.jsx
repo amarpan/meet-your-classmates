@@ -1,31 +1,36 @@
 import React, { useState } from "react";
 
-import { Button, Form, Grid, Header, Image, Segment } from "semantic-ui-react";
+import {
+  Button,
+  Form,
+  Grid,
+  Header,
+  Image,
+  Segment,
+  Icon,
+} from "semantic-ui-react";
 
 let questions = [
-    "What does your computer setup look like?",
-    "What would be your dream job?",
-    "What is your favorite part about GA?",
-    "What has been the hardest part of GA for you so far?",
-    "What was your previous programming experience before GA?",
-    "If you were a fruit, what would you be and why?",
-    "Have you ever fallen asleep during a GA lecture?",
-    "Favorite programming language? ",
-    "Python or JavaScript?",
-]
+  "What does your computer setup look like?",
+  "What would be your dream job?",
+  "What is your favorite part about GA?",
+  "What has been the hardest part of GA for you so far?",
+  "What was your previous programming experience before GA?",
+  "If you were a fruit, what would you be and why?",
+  "Have you ever fallen asleep during a GA lecture?",
+  "Favorite programming language? ",
+  "Python or JavaScript?",
+];
 
-function getRand(min, max){
-    return Math.floor(Math.random() * (max-min) ) + min; 
+function getRand(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
-let rand1 = questions[getRand(0,9)]  
-let rand2 = questions[getRand(0,9)]  
-let rand3 = questions[getRand(0,9)]  
+let rand1 = questions[getRand(0, 9)];
+let rand2 = questions[getRand(0, 9)];
+let rand3 = questions[getRand(0, 9)];
 
 export default function AddSurveyForm(props) {
-
-  
-  
   const [selectedFile, setSelectedFile] = useState("");
   const [state, setState] = useState({
     q1: rand1,
@@ -33,7 +38,7 @@ export default function AddSurveyForm(props) {
     q2: rand2,
     a2: "",
     q3: rand3,
-    a3: ""
+    a3: "",
   });
 
   function handleFileInput(e) {
@@ -60,19 +65,18 @@ export default function AddSurveyForm(props) {
     formData.append("a3", state.a3);
     props.handleAddPost(formData); // calling our function!
 
-    rand1 = questions[getRand(0,5)]  
-    rand2 = questions[getRand(0,5)]  
-    rand3 = questions[getRand(0,5)] 
+    rand1 = questions[getRand(0, 5)];
+    rand2 = questions[getRand(0, 5)];
+    rand3 = questions[getRand(0, 5)];
 
     setState({
-        q1: rand1,
-        a1: "",
-        q2: rand2,
-        a2: "",
-        q3: rand3,
-        a3: ""
-    })
-        
+      q1: rand1,
+      a1: "",
+      q2: rand2,
+      a2: "",
+      q3: rand3,
+      a3: "",
+    });
 
     // Have to submit the form now! We need a function!
   }
@@ -139,7 +143,7 @@ export default function AddSurveyForm(props) {
               onChange={handleChange}
               required
             />
-            
+
             <Form.Input // take this whole thing out if possible
               size="mini"
               className="form-control"
@@ -150,8 +154,12 @@ export default function AddSurveyForm(props) {
               onChange={handleFileInput}
               required
             />
-            <Button type="submit" className="btn">
-              ADD SURVEY
+            <Button animated color="yellow" type="submit" className="btn">
+              <Button.Content visible>Add Survey</Button.Content>
+              <Button.Content hidden>
+                <Icon name="arrow right" />
+                Submit
+              </Button.Content>
             </Button>
           </Form>
         </Segment>
