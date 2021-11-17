@@ -6,6 +6,12 @@ const likesSchema = mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 })
 
+const dislikesSchema = mongoose.Schema({
+
+  username: String,
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
+})
+
 const postSchema = new mongoose.Schema({
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
     q1: String,
@@ -15,7 +21,8 @@ const postSchema = new mongoose.Schema({
     q3: String,
     a3: String,
     photoUrl: String,
-    likes: [likesSchema] // < one post has many likes
+    likes: [likesSchema], // < one post has many likes
+    dislikes: [dislikesSchema] // < one post has many likes
   })
  
 

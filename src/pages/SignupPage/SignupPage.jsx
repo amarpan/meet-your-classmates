@@ -69,9 +69,10 @@ export default function SignUpPage(props) {
   return (
     <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Header as="h2" color="orange" textAlign="center">
+        <Header as="h3" color="orange" textAlign="center">
           <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
-          Sign Up
+          Sign Up for Meet Your Classmates
+          <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
         </Header>
         <Form autoComplete="off" onSubmit={handleSubmit}>
           <Segment stacked>

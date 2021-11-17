@@ -1,11 +1,11 @@
 const Post = require('../models/post');
 
 module.exports = {
-    create,
+    createLike,
     deleteLike
 }
 
-async function create(req, res){
+async function createLike(req, res){
  
     try {
         const post = await Post.findById(req.params.id);

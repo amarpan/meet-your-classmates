@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Loader from "../../components/Loader/Loader";
-import { Divider } from 'semantic-ui-react'
+import { Divider } from "semantic-ui-react";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import PostFeed from "../../components/PostFeed/PostFeed";
 import PostForm from "../../components/PostForm/PostForm";
 import * as postsApi from "../../utils/postApi";
-import * as likesApi from '../../utils/likesApi'
+import * as likesApi from "../../utils/likesApi";
+import * as dislikesApi from "../../utils/dislikesApi";
 
 import { Grid } from "semantic-ui-react";
 
@@ -26,42 +27,57 @@ export default function Feed(props) {
     } catch (err) {
       setError(err.message);
       console.log(err);
-	  setError(err.message)
+      setError(err.message);
     }
   }
 
-  async function addLike(postId){
-	  try {
-		  const data = await likesApi.create(postId);
-		  console.log(data, ' <- this is data the response from likes create')
-		  getPosts()
-
-	  } catch(err){
-		  console.log(err)
-		  setError(err.message)
-	  }
+  async function addLike(postId) {
+    try {
+      const data = await likesApi.create(postId);
+      console.log(data, " <- this is data the response from likes create");
+      getPosts();
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
   }
 
-  async function removeLike(likesId){
-	try {
-		const data = await likesApi.removeLike(likesId);
-		console.log(data, ' <- this is data the response from likes delete')
-		getPosts(false)
-
-	} catch(err){
-		console.log(err)
-		setError(err.message)
-	}	
+  async function addDislike(postId) {
+    try {
+      const data = await dislikesApi.create(postId);
+      console.log(data, " <- this is data the response from dislikes create");
+      getPosts();
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
   }
 
+  async function removeLike(likesId) {
+    try {
+      const data = await likesApi.removeLike(likesId);
+      console.log(data, " <- this is data the response from likes delete");
+      getPosts(false);
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
+  }
 
-
+  async function removeDislike(dislikesId) {
+    try {
+      const data = await dislikesApi.removeDislike(dislikesId);
+      console.log(data, " <- this is data the response from likes delete");
+      getPosts(false);
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
+  }
 
   async function getPosts(showLoading) {
     try {
-      
-
-	  showLoading ? setLoading(true) : setLoading(false)
+      showLoading ? setLoading(true) : setLoading(false);
       const data = await postsApi.getAll();
       setPosts([...data.posts]);
       setLoading(false);
@@ -76,9 +92,8 @@ export default function Feed(props) {
   }, []); // <- useEffect with the empty array this makes the getPosts function call when the component is loaded
   // on the page
 
-
   // Always check the error before loading, because if there is an error
-  // we know something went wrong with the fetch call, therefore the http request 
+  // we know something went wrong with the fetch call, therefore the http request
   // is complete
   if (error) {
     return <ErrorMessage error={error} />;
@@ -93,21 +108,22 @@ export default function Feed(props) {
       <Grid.Row centered>
         <Grid.Column style={{ maxWidth: 450 }}>
           <PostForm handleAddPost={handleAddPost} />
-          const DividerExampleDivider = () => <Divider />
-          const DividerExampleDivider = () => <Divider />
+          const DividerExampleDivider = () => <Divider section />
+          const DividerExampleDivider = () => <Divider section />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>
-        
           <PostFeed
             posts={posts}
             isProfile={false}
-            numPhotosCol={6}
+            numPhotosCol={3}
             loading={loading}
-			user={props.user}
-			addLike={addLike}
-			removeLike={removeLike}
+            user={props.user}
+            addLike={addLike}
+            removeLike={removeLike}
+            addDislike={addDislike}
+            removeDislike={removeDislike}
           />
         </Grid.Column>
       </Grid.Row>

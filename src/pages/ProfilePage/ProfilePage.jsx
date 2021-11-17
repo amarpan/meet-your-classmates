@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import userService from "../../utils/userService";
 import * as likesApi from "../../utils/likesApi";
+import * as dislikesApi from "../../utils/dislikesApi";
 
 export default function ProfilePage(props) {
   const [posts, setPosts] = useState([]);
@@ -45,10 +46,32 @@ export default function ProfilePage(props) {
     }
   }
 
+  async function addDislike(postId) {
+    try {
+      const data = await dislikesApi.create(postId);
+      console.log(data, " <- this is data the response from dislikes create");
+      getProfile();
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
+  }
+
   async function removeLike(likesId) {
     try {
       const data = await likesApi.removeLike(likesId);
       console.log(data, " <- this is data the response from likes delete");
+      getProfile(false);
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
+  }
+
+  async function removeDislike(dislikesId) {
+    try {
+      const data = await dislikesApi.removeDislike(dislikesId);
+      console.log(data, " <- this is data the response from dislikes delete");
       getProfile(false);
     } catch (err) {
       console.log(err);
@@ -81,8 +104,10 @@ export default function ProfilePage(props) {
             posts={posts}
             numPhotosCol={3}
             user={props.user}
-			addLike={addLike}
-			removeLike={removeLike}
+            addLike={addLike}
+            removeLike={removeLike}
+            addDislike={addDislike}
+            removeDislike={removeDislike}
           />
         </Grid.Column>
       </Grid.Row>
