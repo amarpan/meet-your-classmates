@@ -149,7 +149,7 @@ export default function AddSurveyForm(props) {
               className="form-control"
               type="file"
               name="photo"
-              label="Upload a picture of something you referenced in your survey"
+              label="Upload a picture of yourself, something that would tell us more about you, or something you referenced in the survey"
               placeholder="Upload a picture of one of your favorite things in your survey"
               onChange={handleFileInput}
               required

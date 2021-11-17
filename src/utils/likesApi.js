@@ -2,7 +2,7 @@ import tokenService from "./tokenService";
 
 const BASE_URL = "/api/";
 
-export function create(id) {
+export function createLike(id) {
   return fetch(`${BASE_URL}posts/${id}/likes`, {
     method: "POST",
     headers: {

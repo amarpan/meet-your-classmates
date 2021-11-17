@@ -92,9 +92,6 @@ function PostCard({ post, isProfile, user, removeLike, addLike, addDislike, remo
         {post.dislikes.length} Dislikes
           </Card.Content>
         </Card.Content>
-      )}
-
-      
     </Card>
   );
 }

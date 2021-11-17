@@ -23,7 +23,7 @@ app.use(require('./config/auth'));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/posts', require('./routes/api/posts'));
 app.use('/api', require('./routes/api/likes'));
-// app.use('/api', require('./routes/api/dislikes'));
+app.use('/api', require('./routes/api/dislikes'));
 // "catch all" route
 // This line is what will render our final code our final react app in production (aka on heroku)
 // the build folder comes from npm run build

@@ -37,7 +37,7 @@ export default function ProfilePage(props) {
 
   async function addLike(postId) {
     try {
-      const data = await likesApi.create(postId);
+      const data = await likesApi.createLike(postId);
       console.log(data, " <- this is data the response from likes create");
       getProfile();
     } catch (err) {
@@ -48,7 +48,7 @@ export default function ProfilePage(props) {
 
   async function addDislike(postId) {
     try {
-      const data = await dislikesApi.create(postId);
+      const data = await dislikesApi.createDislike(postId);
       console.log(data, " <- this is data the response from dislikes create");
       getProfile();
     } catch (err) {
@@ -91,14 +91,14 @@ export default function ProfilePage(props) {
   }
 
   return (
-    <Grid centered>
+    <Grid>
       <Grid.Row>
         <Grid.Column>
           <ProfileBio user={user} />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column style={{ maxWidth: 750 }}>
+        <Grid.Column >
           <PostFeed
             isProfile={true}
             posts={posts}

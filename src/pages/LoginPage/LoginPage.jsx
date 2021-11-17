@@ -57,7 +57,7 @@ export default function LoginPage(props) {
             Log-in to Meet Your Classmates
             <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
           </Header>
-          <Form autoComplete="off" onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit}>
             <Segment stacked>
               <Form.Input
                 type="email"

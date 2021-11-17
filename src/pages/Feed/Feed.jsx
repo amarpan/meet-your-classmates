@@ -33,7 +33,7 @@ export default function Feed(props) {
 
   async function addLike(postId) {
     try {
-      const data = await likesApi.create(postId);
+      const data = await likesApi.createLike(postId);
       console.log(data, " <- this is data the response from likes create");
       getPosts();
     } catch (err) {
@@ -44,7 +44,7 @@ export default function Feed(props) {
 
   async function addDislike(postId) {
     try {
-      const data = await dislikesApi.create(postId);
+      const data = await dislikesApi.createDislike(postId);
       console.log(data, " <- this is data the response from dislikes create");
       getPosts();
     } catch (err) {
