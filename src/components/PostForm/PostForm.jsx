@@ -97,7 +97,7 @@ export default function AddSurveyForm(props) {
   return (
     <Grid textAlign="center" style={{ height: "25vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Segment color={colors[getRand(0,9)]}>
+        <Segment color="purple">
           <Form size="mini" autoComplete="off" onSubmit={handleSubmit}>
             {/* <Form.Input
               className="form-control"
