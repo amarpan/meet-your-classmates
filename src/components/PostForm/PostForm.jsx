@@ -8,6 +8,7 @@ import {
   Image,
   Segment,
   Icon,
+  Label
 } from "semantic-ui-react";
 
 let questions = [
@@ -96,6 +97,7 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
+              icon="write"
               size="tiny"
               className="form-control"
               name="a1"
@@ -115,6 +117,8 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
+            
+              icon="write"
               size="tiny"
               className="form-control"
               name="a2"
@@ -134,6 +138,7 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
+              icon="write"
               size="tiny"
               className="form-control"
               name="a3"
@@ -149,7 +154,7 @@ export default function AddSurveyForm(props) {
               className="form-control"
               type="file"
               name="photo"
-              label="Upload a picture of yourself, something that would tell us more about you, or something you referenced in the survey"
+              label="Upload a picture of yourself, something meaningful in your life, or something you referenced in the survey"
               placeholder="Upload a picture of one of your favorite things in your survey"
               onChange={handleFileInput}
               required

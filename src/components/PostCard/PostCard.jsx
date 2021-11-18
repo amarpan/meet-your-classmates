@@ -1,7 +1,15 @@
 import React from "react";
-import { Card, Icon, Image, Divider } from "semantic-ui-react";
+import { Card, Icon, Image, Divider, Reveal, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-function PostCard({ post, isProfile, user, removeLike, addLike, addDislike, removeDislike }) {
+function PostCard({
+  post,
+  isProfile,
+  user,
+  removeLike,
+  addLike,
+  addDislike,
+  removeDislike,
+}) {
   // We need to know if the logged in user is in the post.likes array
   // if they are then they've clicked on the like
   // heart should be red
@@ -31,9 +39,9 @@ function PostCard({ post, isProfile, user, removeLike, addLike, addDislike, remo
       : () => addLike(post._id);
 
   const clickHandlerDis =
-      dislikeIndex > -1
-        ? () => removeDislike(post.dislikes[dislikeIndex]._id)
-        : () => addDislike(post._id);
+    dislikeIndex > -1
+      ? () => removeDislike(post.dislikes[dislikeIndex]._id)
+      : () => addDislike(post._id);
 
   // if the logged in user is not in the post.likes array
   // heart should grey
@@ -41,8 +49,18 @@ function PostCard({ post, isProfile, user, removeLike, addLike, addDislike, remo
 
   return (
     <Card key={post._id} raised style={{ height: 380 }}>
-        <Card.Content textAlign="left">
-          <Card.Content>
+      <Card.Content textAlign="left">
+        <Reveal animated="move right">
+          <Reveal.Content visible>
+            <Button.Group >
+              <Button color="red">Who</Button>
+              <Button color='orange'>could</Button>
+              <Button color='green'>it</Button>
+              <Button color='blue'>possibly</Button>
+              <Button color='purple'>be?</Button>
+            </Button.Group>
+          </Reveal.Content>
+          <Reveal.Content hidden>
             <Link to={`/${post.user.username}`}>
               <Image
                 size="tiny"
@@ -55,43 +73,46 @@ function PostCard({ post, isProfile, user, removeLike, addLike, addDislike, remo
               />
               {post.user.username} ({post.user.fullName})
             </Link>
-            <Divider />
-            <Card.Description>
-              <h4>{post.q1}</h4>
-            </Card.Description>
-            <Card.Description textAlign="right">{post.a1}</Card.Description>
-            <Card.Description>
-              <h4>{post.q2}</h4>
-            </Card.Description>
-            <Card.Description textAlign="right">{post.a2}</Card.Description>
-            <Card.Description>
-              <h4>{post.q3}</h4>
-            </Card.Description>
-            <Card.Description textAlign="right">{post.a3}</Card.Description>
-            <Image
-              size="tiny"
-              style={{ width: 100, height: 50 }}
-              src={`${post.photoUrl}`}
-              wrapped
-              ui={true}
-              floated="right"
-            />
-            <Icon
-          name={"thumbs up outline"}
-          size="large"
-          color={likeColor}
-          onClick={clickHandler}
-        />
-        {post.likes.length} Likes {""} 
-        <Icon
-          name={"thumbs down outline"}
-          size="large"
-          color={dislikeColor}
-          onClick={clickHandlerDis}
-        />
-        {post.dislikes.length} Dislikes
-          </Card.Content>
+          </Reveal.Content>
+        </Reveal>
+        <Card.Content>
+          <Divider />
+          <Card.Description>
+            <h4>{post.q1}</h4>
+          </Card.Description>
+          <Card.Description textAlign="right">{post.a1}</Card.Description>
+          <Card.Description>
+            <h4>{post.q2}</h4>
+          </Card.Description>
+          <Card.Description textAlign="right">{post.a2}</Card.Description>
+          <Card.Description>
+            <h4>{post.q3}</h4>
+          </Card.Description>
+          <Card.Description textAlign="right">{post.a3}</Card.Description>
+          <Image
+            size="tiny"
+            style={{ width: 100, height: 50 }}
+            src={`${post.photoUrl}`}
+            wrapped
+            ui={true}
+            floated="right"
+          />
+          <Icon
+            name={"thumbs up"}
+            size="large"
+            color={likeColor}
+            onClick={clickHandler}
+          />
+          {post.likes.length} Likes {""}
+          <Icon
+            name={"thumbs down"}
+            size="large"
+            color={dislikeColor}
+            onClick={clickHandlerDis}
+          />
+          {post.dislikes.length} Dislikes
         </Card.Content>
+      </Card.Content>
     </Card>
   );
 }
