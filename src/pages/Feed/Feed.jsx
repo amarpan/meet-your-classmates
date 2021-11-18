@@ -8,7 +8,22 @@ import * as postsApi from "../../utils/postApi";
 import * as likesApi from "../../utils/likesApi";
 import * as dislikesApi from "../../utils/dislikesApi";
 
-import { Grid } from "semantic-ui-react";
+import { Grid, Segment } from "semantic-ui-react";
+
+let colors = [ // 9 colors total
+  "red",
+  "orange",
+  "yellow",
+  "olive",
+  "green",
+  "teal",
+  "blue",
+  "violet",
+  "purple"
+]
+function getRand(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 export default function Feed(props) {
   const [posts, setPosts] = useState([]);
@@ -106,11 +121,16 @@ export default function Feed(props) {
   return (
     <Grid>
       <Grid.Row centered>
-        <Grid.Column style={{ maxWidth: 450 }}>
+      <Segment color={colors[getRand(0,9)]} padded="very">
+      <Grid.Column style={{ maxWidth: 450 }}>
+          
           <PostForm handleAddPost={handleAddPost} />
           const DividerExampleDivider = () => <Divider section />
           const DividerExampleDivider = () => <Divider section />
         </Grid.Column>
+      </Segment>
+
+        
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>

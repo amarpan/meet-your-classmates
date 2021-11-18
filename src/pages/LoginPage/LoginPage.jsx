@@ -55,7 +55,7 @@ export default function LoginPage(props) {
           <Header as="h3" color="orange" textAlign="center">
             <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
             Log-in to Meet Your Classmates
-            <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
+            <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
           </Header>
           <Form onSubmit={handleSubmit}>
             <Segment stacked>

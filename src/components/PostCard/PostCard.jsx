@@ -1,6 +1,30 @@
 import React from "react";
-import { Card, Icon, Image, Divider, Reveal, Button } from "semantic-ui-react";
+import {
+  Card,
+  Icon,
+  Image,
+  Divider,
+  Reveal,
+  Button,
+  Segment,
+} from "semantic-ui-react";
 import { Link } from "react-router-dom";
+
+let colors = [ // 9 colors total
+  "red",
+  "orange",
+  "yellow",
+  "olive",
+  "green",
+  "teal",
+  "blue",
+  "violet",
+  "purple"
+]
+function getRand(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 function PostCard({
   post,
   isProfile,
@@ -48,16 +72,17 @@ function PostCard({
   // onClick of the heart should addLike
 
   return (
-    <Card key={post._id} raised style={{ height: 380 }}>
+    // <Segment>
+    <Card color={colors[getRand(0,9)]} key={post._id} raised style={{ height: 380 }}>
       <Card.Content textAlign="left">
         <Reveal animated="move right">
           <Reveal.Content visible>
-            <Button.Group >
+            <Button.Group>
               <Button color="red">Who</Button>
-              <Button color='orange'>could</Button>
-              <Button color='green'>it</Button>
-              <Button color='blue'>possibly</Button>
-              <Button color='purple'>be?</Button>
+              <Button color="orange">could</Button>
+              <Button color="green">it</Button>
+              <Button color="blue">possibly</Button>
+              <Button color="purple">be?</Button>
             </Button.Group>
           </Reveal.Content>
           <Reveal.Content hidden>
@@ -75,43 +100,45 @@ function PostCard({
             </Link>
           </Reveal.Content>
         </Reveal>
-        <Card.Content>
-          <Divider />
-          <Card.Description>
-            <h4>{post.q1}</h4>
-          </Card.Description>
-          <Card.Description textAlign="right">{post.a1}</Card.Description>
-          <Card.Description>
-            <h4>{post.q2}</h4>
-          </Card.Description>
-          <Card.Description textAlign="right">{post.a2}</Card.Description>
-          <Card.Description>
-            <h4>{post.q3}</h4>
-          </Card.Description>
-          <Card.Description textAlign="right">{post.a3}</Card.Description>
-          <Image
-            size="tiny"
-            style={{ width: 100, height: 50 }}
-            src={`${post.photoUrl}`}
-            wrapped
-            ui={true}
-            floated="right"
-          />
-          <Icon
-            name={"thumbs up"}
-            size="large"
-            color={likeColor}
-            onClick={clickHandler}
-          />
-          {post.likes.length} Likes {""}
-          <Icon
-            name={"thumbs down"}
-            size="large"
-            color={dislikeColor}
-            onClick={clickHandlerDis}
-          />
-          {post.dislikes.length} Dislikes
-        </Card.Content>
+        <Segment color={colors[getRand(0,9)]}>
+          <Card.Content>
+            <Divider />
+            <Card.Description>
+              <h4>{post.q1}</h4>
+            </Card.Description>
+            <Card.Description textAlign="right">{post.a1}</Card.Description>
+            <Card.Description>
+              <h4>{post.q2}</h4>
+            </Card.Description>
+            <Card.Description textAlign="right">{post.a2}</Card.Description>
+            <Card.Description>
+              <h4>{post.q3}</h4>
+            </Card.Description>
+            <Card.Description textAlign="right">{post.a3}</Card.Description>
+            <Image
+              size="tiny"
+              style={{ width: 100, height: 50 }}
+              src={`${post.photoUrl}`}
+              wrapped
+              ui={true}
+              floated="right"
+            />
+            <Icon
+              name={"thumbs up"}
+              size="large"
+              color={likeColor}
+              onClick={clickHandler}
+            />
+            {post.likes.length} Likes {""}
+            <Icon
+              name={"thumbs down"}
+              size="large"
+              color={dislikeColor}
+              onClick={clickHandlerDis}
+            />
+            {post.dislikes.length} Dislikes
+          </Card.Content>
+        </Segment>
       </Card.Content>
     </Card>
   );

@@ -19,11 +19,11 @@ export default function PageHeader({ user, handleLogout }) {
   return (
     <Segment clearing>
       <Header as="h1" textAlign="center" color='red'>
-      <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />
+      <Image src="https://i.ibb.co/vD8wqgj/bookout.png" />
       <Link to="/">
           Meet Your Classmates
         </Link>
-        <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />
+        <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />
       </Header >
       <Header as="h2" floated="right">
       <Link to="" onClick={handleLogout}>

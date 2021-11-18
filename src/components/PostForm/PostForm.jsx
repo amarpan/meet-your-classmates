@@ -22,6 +22,18 @@ let questions = [
   "Favorite programming language? ",
   "Python or JavaScript?",
 ];
+ 
+let colors = [ // 9 colors total
+  "red",
+  "orange",
+  "yellow",
+  "olive",
+  "green",
+  "teal",
+  "blue",
+  "violet",
+  "purple"
+]
 
 function getRand(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -85,7 +97,7 @@ export default function AddSurveyForm(props) {
   return (
     <Grid textAlign="center" style={{ height: "25vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Segment>
+        <Segment color={colors[getRand(0,9)]}>
           <Form size="mini" autoComplete="off" onSubmit={handleSubmit}>
             {/* <Form.Input
               className="form-control"
@@ -159,7 +171,7 @@ export default function AddSurveyForm(props) {
               onChange={handleFileInput}
               required
             />
-            <Button animated color="yellow" type="submit" className="btn">
+            <Button animated color="green" type="submit" className="btn">
               <Button.Content visible>Add Survey</Button.Content>
               <Button.Content hidden>
                 <Icon name="arrow right" />

@@ -16,7 +16,7 @@ export default function PostFeed({
   return (
     <Card.Group itemsPerRow={numPhotosCol} stackable>
       {loading ? (
-        <Segment>
+        <Segment color="red">
           <Dimmer active inverted>
             <Loader size="small">Loading</Loader>
           </Dimmer>

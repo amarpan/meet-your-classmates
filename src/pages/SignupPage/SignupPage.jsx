@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
-import { Button, Form, Grid, Header, Image, Segment, Icon } from "semantic-ui-react";
+import { Button, Form, Grid, Header, Image, Segment, Icon, Message } from "semantic-ui-react";
 import userService from "../../utils/userService";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function SignUpPage(props) {
   const navigate = useNavigate(); // <- programtically navigate to a different route
@@ -72,7 +72,7 @@ export default function SignUpPage(props) {
         <Header as="h3" color="orange" textAlign="center">
           <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
           Sign Up for Meet Your Classmates
-          <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
+          <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
         </Header>
         <Form autoComplete="off" onSubmit={handleSubmit}>
           <Segment stacked>
@@ -170,6 +170,10 @@ export default function SignUpPage(props) {
           </Segment>
           {error ? <ErrorMessage error={error} /> : null}
         </Form>
+        <Message>
+            Already a member? <Link to="/login">Login</Link>
+          </Message>
+          {error ? <ErrorMessage error={error} /> : null}
       </Grid.Column>
     </Grid>
   );
