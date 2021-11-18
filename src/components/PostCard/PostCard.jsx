@@ -13,8 +13,6 @@ import { Link } from "react-router-dom";
 let colors = [ // 9 colors total
   "red",
   "orange",
-  "yellow",
-  "olive",
   "green",
   "teal",
   "blue",
@@ -77,12 +75,12 @@ function PostCard({
       <Card.Content textAlign="left">
         <Reveal animated="move right">
           <Reveal.Content visible>
-            <Button.Group>
-              <Button color="red">Who</Button>
-              <Button color="orange">could</Button>
-              <Button color="green">it</Button>
-              <Button color="blue">possibly</Button>
-              <Button color="purple">be?</Button>
+            <Button.Group >
+              <Button>Who</Button>
+              <Button>could</Button>
+              <Button >it</Button>
+              <Button >possibly</Button>
+              <Button >be?</Button>
             </Button.Group>
           </Reveal.Content>
           <Reveal.Content hidden>
@@ -100,7 +98,7 @@ function PostCard({
             </Link>
           </Reveal.Content>
         </Reveal>
-        <Segment color={colors[getRand(0,9)]}>
+        <Segment inverted color={colors[getRand(0,9)]} tertiary>
           <Card.Content>
             <Divider />
             <Card.Description>

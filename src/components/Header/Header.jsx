@@ -17,7 +17,7 @@ import {
 
 export default function PageHeader({ user, handleLogout }) {
   return (
-    <Segment clearing>
+    <Segment inverted color="black"clearing>
       <Header as="h1" textAlign="center" color='red'>
       <Image src="https://i.ibb.co/vD8wqgj/bookout.png" />
       <Link to="/">

@@ -4,6 +4,22 @@ import { Button, Form, Grid, Header, Image, Segment, Icon, Message } from "seman
 import userService from "../../utils/userService";
 import { useNavigate, Link } from "react-router-dom";
 
+let colors = [ // 9 colors total
+  "red",
+  "orange",
+  "yellow",
+  "olive",
+  "green",
+  "teal",
+  "blue",
+  "violet",
+  "purple"
+]
+
+function getRand(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 export default function SignUpPage(props) {
   const navigate = useNavigate(); // <- programtically navigate to a different route
 
@@ -75,7 +91,7 @@ export default function SignUpPage(props) {
           <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
         </Header>
         <Form autoComplete="off" onSubmit={handleSubmit}>
-          <Segment stacked>
+          <Segment inverted color="blue" stacked tertiary>
             <Form.Input
               name="username"
               placeholder="username"

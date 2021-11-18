@@ -97,7 +97,7 @@ export default function AddSurveyForm(props) {
   return (
     <Grid textAlign="center" style={{ height: "25vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Segment color="purple">
+        <Segment inverted color="green" tertiary>
           <Form size="mini" autoComplete="off" onSubmit={handleSubmit}>
             {/* <Form.Input
               className="form-control"
@@ -166,7 +166,7 @@ export default function AddSurveyForm(props) {
               className="form-control"
               type="file"
               name="photo"
-              label="Upload a picture of yourself, something meaningful in your life, or something you referenced in the survey"
+              label="Upload a pic of something meaningful in your life, or a gif of how you're feeling right now"
               placeholder="Upload a picture of one of your favorite things in your survey"
               onChange={handleFileInput}
               required

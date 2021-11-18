@@ -121,7 +121,7 @@ export default function Feed(props) {
   return (
     <Grid>
       <Grid.Row centered>
-      <Segment color={colors[getRand(0,9)]} padded="very">
+      <Segment inverted color="gray" padded="very" tertiary>
       <Grid.Column style={{ maxWidth: 450 }}>
           
           <PostForm handleAddPost={handleAddPost} />
