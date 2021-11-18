@@ -98,7 +98,7 @@ function PostCard({
             </Link>
           </Reveal.Content>
         </Reveal>
-        <Segment inverted color={colors[getRand(0,9)]} tertiary>
+        <Segment inverted color={colors[getRand(0,9)]} tertiary size="tiny">
           <Card.Content>
             <Divider />
             <Card.Description>

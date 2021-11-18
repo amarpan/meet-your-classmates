@@ -90,8 +90,10 @@ export default function Feed(props) {
     }
   }
 
+  
   async function getPosts(showLoading) {
     try {
+      
       showLoading ? setLoading(true) : setLoading(false);
       const data = await postsApi.getAll();
       setPosts([...data.posts]);
@@ -103,6 +105,9 @@ export default function Feed(props) {
   }
 
   useEffect(() => {
+    setTimeout(function () {
+      getPosts();
+  }, 9000);
     getPosts();
   }, []); // <- useEffect with the empty array this makes the getPosts function call when the component is loaded
   // on the page
@@ -118,11 +123,13 @@ export default function Feed(props) {
     return <Loader />;
   }
 
+
+
   return (
     <Grid>
       <Grid.Row centered>
-      <Segment inverted color="gray" padded="very" tertiary>
-      <Grid.Column style={{ maxWidth: 450 }}>
+      <Segment inverted color="green" padded="very" tertiary>
+      <Grid.Column color="red" key="red" style={{ maxWidth: 450 }}>
           
           <PostForm handleAddPost={handleAddPost} />
           const DividerExampleDivider = () => <Divider section />

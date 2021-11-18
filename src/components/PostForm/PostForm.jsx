@@ -8,7 +8,8 @@ import {
   Image,
   Segment,
   Icon,
-  Label
+  Label,
+  Message,
 } from "semantic-ui-react";
 
 let questions = [
@@ -22,8 +23,9 @@ let questions = [
   "Favorite programming language? ",
   "Python or JavaScript?",
 ];
- 
-let colors = [ // 9 colors total
+
+let colors = [
+  // 9 colors total
   "red",
   "orange",
   "yellow",
@@ -32,8 +34,8 @@ let colors = [ // 9 colors total
   "teal",
   "blue",
   "violet",
-  "purple"
-]
+  "purple",
+];
 
 function getRand(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -97,7 +99,7 @@ export default function AddSurveyForm(props) {
   return (
     <Grid textAlign="center" style={{ height: "25vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Segment inverted color="green" tertiary>
+        <Segment inverted color="gray" tertiary>
           <Form size="mini" autoComplete="off" onSubmit={handleSubmit}>
             {/* <Form.Input
               className="form-control"
@@ -129,7 +131,6 @@ export default function AddSurveyForm(props) {
               readOnly
             /> */}
             <Form.Input
-            
               icon="write"
               size="tiny"
               className="form-control"
