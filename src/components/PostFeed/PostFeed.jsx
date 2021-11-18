@@ -11,7 +11,8 @@ export default function PostFeed({
   addLike,
   removeLike,
   addDislike,
-  removeDislike
+  removeDislike,
+  deletePost
 }) {
   return (
     <Card.Group itemsPerRow={numPhotosCol} stackable>
@@ -34,6 +35,7 @@ export default function PostFeed({
             addLike={addLike}
             removeDislike={removeDislike}
             addDislike={addDislike}
+            deletePost={deletePost}
           />
         );
       })}

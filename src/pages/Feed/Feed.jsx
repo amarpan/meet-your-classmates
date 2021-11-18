@@ -46,6 +46,17 @@ export default function Feed(props) {
     }
   }
 
+  async function deletePost(postId){
+    try {
+      const data = await postsApi.deletePost(postId);
+      console.log(data, " <- this is data the response from likes create");
+      getPosts();
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
+  }
+
   async function addLike(postId) {
     try {
       const data = await likesApi.createLike(postId);
@@ -151,6 +162,7 @@ export default function Feed(props) {
             removeLike={removeLike}
             addDislike={addDislike}
             removeDislike={removeDislike}
+            deletePost={deletePost}
           />
         </Grid.Column>
       </Grid.Row>

@@ -9,8 +9,11 @@ import {
   Segment,
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+// import { rawListeners } from "../../../models/post";
+import * as postApi from "../../utils/postApi";
 
-let colors = [ // 9 colors total
+let colors = [
+  // 9 colors total
   "red",
   "orange",
   "green",
@@ -18,8 +21,8 @@ let colors = [ // 9 colors total
   "blue",
   "violet",
   "purple",
-  "gray"
-]
+  "gray",
+];
 function getRand(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -32,6 +35,7 @@ function PostCard({
   addLike,
   addDislike,
   removeDislike,
+  deletePost
 }) {
   // We need to know if the logged in user is in the post.likes array
   // if they are then they've clicked on the like
@@ -66,22 +70,25 @@ function PostCard({
       ? () => removeDislike(post.dislikes[dislikeIndex]._id)
       : () => addDislike(post._id);
 
+  const clickHandlerPost =
+    deletePost(post._id)
+
   // if the logged in user is not in the post.likes array
   // heart should grey
   // onClick of the heart should addLike
 
   return (
     // <Segment>
-    <Card color={colors[getRand(0,8)]} key={post._id} raised>
+    <Card color={colors[getRand(0, 8)]} key={post._id} raised>
       <Card.Content textAlign="left">
         <Reveal animated="move right">
           <Reveal.Content visible>
-            <Button.Group >
+            <Button.Group>
               <Button>Who</Button>
               <Button>could</Button>
-              <Button >it</Button>
-              <Button >possibly</Button>
-              <Button >be?</Button>
+              <Button>it</Button>
+              <Button>possibly</Button>
+              <Button>be?</Button>
             </Button.Group>
           </Reveal.Content>
           <Reveal.Content hidden>
@@ -99,7 +106,7 @@ function PostCard({
             </Link>
           </Reveal.Content>
         </Reveal>
-        <Segment inverted color={colors[getRand(0,9)]} tertiary size="tiny">
+        <Segment inverted color={colors[getRand(0, 9)]} tertiary size="tiny">
           <Card.Content>
             <Divider />
             <Card.Description>
@@ -135,7 +142,12 @@ function PostCard({
               color={dislikeColor}
               onClick={clickHandlerDis}
             />
-            {post.dislikes.length} Dislikes
+            {post.dislikes.length} Dislikes {""}
+            <Icon 
+              name="delete" 
+              style={{ float: "right" }}
+              onClick={clickHandlerPost} 
+              />
           </Card.Content>
         </Segment>
       </Card.Content>

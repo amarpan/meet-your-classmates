@@ -8,19 +8,46 @@ const BUCKET_NAME = process.env.BUCKET_NAME;
 module.exports = {
   create,
   index, 
-  deleteOne,
   delete: deletePost
 };
 
-function deleteOne(id) {
-  const idx = posts.findIndex(post => post.id === parseInt(id));
-  posts.splice(idx, 1);
+async function deletePost(req, res) {
+  try{
+    Post.findOne({ _id: req.params.postId })
+    .populate("user")
+    .exec((err,post)=>{
+      if(err || !post){
+        if(err instanceof Error){
+          throw new Error(err)
+        }
+        throw new Error("couldn't find post")
+      }
+      if(post.user._id.toString() === req.user._id.toString()){
+        post.remove()
+        .then(result=>{
+          res.json({message:"successfully deleted"})
+        }).catch(err=>{
+            console.log(err)
+        })
+
+      }
+    })
+  } catch (err) {
+    res.status(400).json({ err });
+}
 }
 
-function deletePost(req, res) {
-  Post.deleteOne({ _id: req.params.id }, function (err, deletedPost) {
-      if (err) { console.log(err) }
-  });
+async function index(req, res) {
+  try {
+    // this populates the user when you find the posts
+    // so you'll have access to the users information
+    // when you fetch teh posts
+    const posts = await Post.find().populate("user")
+    console.log(posts)
+    res.status(200).json({ posts: posts });
+  } catch (err) {
+    res.status(400).json({ err });
+  }
 }
 
 // async function deletePost(req, res){
