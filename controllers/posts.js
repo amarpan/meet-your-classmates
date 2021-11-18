@@ -7,18 +7,44 @@ const BUCKET_NAME = process.env.BUCKET_NAME;
 
 module.exports = {
   create,
-  index
+  index, 
+  deleteOne,
+  delete: deletePost
 };
 
-function create(req, res) {
-  console.log(req.file, req.body, "this is create method", req.user);
-    const filePath = `${uuidv4()}/${req.file.originalname}`;
-    const params = {
-      Bucket: BUCKET_NAME,
-      Key: filePath,
-      Body: req.file.buffer
-    };
-    s3.upload(params, async function (err, data) {
+function deleteOne(id) {
+  const idx = posts.findIndex(post => post.id === parseInt(id));
+  posts.splice(idx, 1);
+}
+
+function deletePost(req, res) {
+  Post.deleteOne({ _id: req.params.id }, function (err, deletedPost) {
+      if (err) { console.log(err) }
+  });
+}
+
+// async function deletePost(req, res){
+//   try {
+      
+//       const post = await Post.findOne({'likes._id': req.params.id, 'likes.username': req.user.username});
+//       post.likes.remove(req.params.id) // mutating a document
+//       // req.params.id is the like id 
+//       await post.save() // after you mutate a document you must save
+//       res.json({data: 'like removed'})
+//   } catch(err){
+//       res.status(400).json({err})
+//   }
+// }
+
+async function create(req, res) {
+  console.log(req.body, "this is create method", req.user);
+    // const filePath = `${uuidv4()}/${req.file.originalname}`;
+    // const params = {
+    //   Bucket: BUCKET_NAME,
+    //   Key: filePath,
+    //   Body: req.file.buffer
+    // };
+    // s3.upload(params, async function (err, data) {
         try{
             const post = await Post.create({
                 q1: req.body.q1,
@@ -28,13 +54,13 @@ function create(req, res) {
                 q3: req.body.q3,
                 a3: req.body.a3,
                 user: req.user,
-                photoUrl: data.Location,
+            
               });
             res.status(201).json({ post: post });
         } catch (err) {
             res.status(400).json({ err });
         }
-    });
+    // });
 }
 
 async function index(req, res) {

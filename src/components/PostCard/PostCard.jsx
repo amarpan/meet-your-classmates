@@ -113,14 +113,14 @@ function PostCard({
               <h4>{post.q3}</h4>
             </Card.Description>
             <Card.Description textAlign="right">{post.a3}</Card.Description>
-            <Image
+            {/* <Image
               size="tiny"
               style={{ width: 100, height: 50 }}
               src={`${post.photoUrl}`}
               wrapped
               ui={true}
               floated="right"
-            />
+            /> */}
             <Icon
               name={"thumbs up"}
               size="large"

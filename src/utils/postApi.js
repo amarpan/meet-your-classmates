@@ -5,10 +5,13 @@ const BASE_URL = "/api/posts/";
 export function create(post){
 	return fetch(BASE_URL, {
 		method: 'POST',
-		body: post, // <- this has an image so its formData, no need to jsonify
+		
 		headers: {
-			'Authorization': 'Bearer ' + tokenService.getToken()
-		}
+			'Authorization': 'Bearer ' + tokenService.getToken(),
+			'Content-Type': 'application/json',
+
+		},
+		body: JSON.stringify(post), // <- this has an image so its formData, no need to jsonify
 	}).then(res => {
 		// Valid login if we have a status of 2xx (res.ok)
 		if (res.ok) return res.json();

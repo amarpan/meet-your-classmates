@@ -4,8 +4,10 @@ const postsCtrl = require('../../controllers/posts');
 const multer  = require('multer')
 const upload = multer()
 // /*---------- Public Routes ----------*/
-router.post('/', isAuthorized, upload.single('photo'), postsCtrl.create);
+// router.post('/', isAuthorized, upload.single('photo'), postsCtrl.create);
+router.post('/', isAuthorized, postsCtrl.create);
 router.get('/', postsCtrl.index)
+router.delete('/:id', postsCtrl.delete)
 
 
 /*---------- Protected Routes ----------*/

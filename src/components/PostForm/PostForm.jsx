@@ -71,14 +71,14 @@ export default function AddSurveyForm(props) {
     e.preventDefault();
 
     const formData = new FormData();
-    formData.append("photo", selectedFile);
+    // formData.append("photo", selectedFile);
     formData.append("q1", state.q1);
     formData.append("a1", state.a1);
     formData.append("q2", state.q2);
     formData.append("a2", state.a2);
     formData.append("q3", state.q3);
     formData.append("a3", state.a3);
-    props.handleAddPost(formData); // calling our function!
+    props.handleAddPost(state); // calling our function!
 
     rand1 = questions[getRand(0, 5)];
     rand2 = questions[getRand(0, 5)];
@@ -162,7 +162,7 @@ export default function AddSurveyForm(props) {
               required
             />
 
-            <Form.Input // take this whole thing out if possible
+            {/* <Form.Input // take this whole thing out if possible
               size="mini"
               className="form-control"
               type="file"
@@ -171,7 +171,7 @@ export default function AddSurveyForm(props) {
               placeholder="Upload a picture of one of your favorite things in your survey"
               onChange={handleFileInput}
               required
-            />
+            /> */}
             <Button animated color="green" type="submit" className="btn">
               <Button.Content visible>Add Survey</Button.Content>
               <Button.Content hidden>
