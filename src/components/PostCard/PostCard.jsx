@@ -17,7 +17,8 @@ let colors = [ // 9 colors total
   "teal",
   "blue",
   "violet",
-  "purple"
+  "purple",
+  "gray"
 ]
 function getRand(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -71,7 +72,7 @@ function PostCard({
 
   return (
     // <Segment>
-    <Card color={colors[getRand(0,9)]} key={post._id} raised style={{ height: 380 }}>
+    <Card color={colors[getRand(0,8)]} key={post._id} raised>
       <Card.Content textAlign="left">
         <Reveal animated="move right">
           <Reveal.Content visible>
@@ -86,7 +87,7 @@ function PostCard({
           <Reveal.Content hidden>
             <Link to={`/${post.user.username}`}>
               <Image
-                size="tiny"
+                size="large"
                 avatar
                 src={
                   post.user.photoUrl

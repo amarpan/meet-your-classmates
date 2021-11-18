@@ -99,7 +99,7 @@ export default function AddSurveyForm(props) {
   return (
     <Grid textAlign="center" style={{ height: "25vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Segment inverted color="gray" tertiary>
+        {/* <Segment inverted color="gray" tertiary> */}
           <Form size="mini" autoComplete="off" onSubmit={handleSubmit}>
             {/* <Form.Input
               className="form-control"
@@ -180,7 +180,7 @@ export default function AddSurveyForm(props) {
               </Button.Content>
             </Button>
           </Form>
-        </Segment>
+        {/* </Segment> */}
       </Grid.Column>
     </Grid>
   );

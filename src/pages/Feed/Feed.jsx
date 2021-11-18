@@ -132,8 +132,8 @@ export default function Feed(props) {
       <Grid.Column color="red" key="red" style={{ maxWidth: 450 }}>
           
           <PostForm handleAddPost={handleAddPost} />
-         <Divider section />
-         <Divider section />
+         <Divider hidden section />
+         {/* <Divider section /> */}
         </Grid.Column>
       </Segment>
 

@@ -18,7 +18,7 @@ import {
 export default function PageHeader({ user, handleLogout }) {
   return (
     <Segment inverted color="black" clearing>
-      <Menu inverted color="purple" tertiary>
+      <Menu inverted  tertiary>
         <Menu.Item>
           <Link to="/">Home</Link>
         </Menu.Item>
