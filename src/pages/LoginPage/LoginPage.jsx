@@ -64,17 +64,17 @@ export default function LoginPage(props) {
     <>
       <Grid 
         textAlign="center"
-        style={{ height: "100vh", background: "linear-gradient(#e66465, #9198e5)" }}
+        style={{ height: "100vh", background: "linear-gradient(#e66465, #9198e5)", fontFamily: "Josefin Sans" }}
         verticalAlign="middle"
       >
         <Grid.Column style={{ maxWidth: 450 }}>
-          <Header  as="h3" color="black" textAlign="center">
+          <Header  as="h3" color="black" textAlign="center" style={{}}>
             <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
             Log-in to Meet Your Classmates
             <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
           </Header>
           <Form  onSubmit={handleSubmit}>
-            <Segment style={{background: "linear-gradient(#e66465, #9198e5)"}} inverted color="blue" stacked tertiary>
+            <Segment style={{background: "linear-gradient(#e66465, #9198e5)"}} color="blue" stacked tertiary>
               <Form.Input
                 type="email"
                 name="email"
@@ -108,7 +108,7 @@ export default function LoginPage(props) {
               </Button>
             </Segment>
           </Form>
-          <Message style={{background: "linear-gradient(#e66465, #9198e5)", color:"white"}}>
+          <Message style={{background: "linear-gradient(#e66465, #9198e5)", color:"white", fontFamily: "Josefin Sans"}}>
             New to us? <Link style={{color:"black", textDecoration:"underline"}} to="/signup">Sign Up</Link>
           </Message>
           {error ? <ErrorMessage error={error} /> : null}

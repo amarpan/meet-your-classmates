@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import {
   Button,
   Container,
@@ -59,7 +60,7 @@ export default function PageHeader({ user, handleLogout }) {
       </Menu>
       <Header as="h1" textAlign="center" color="red">
         <Image src="https://i.ibb.co/vD8wqgj/bookout.png" />
-        <Link style={{textDecoration:'none', color:"skyblue"}} to="/">Meet Your Classmates</Link>
+        <Link style={{textDecoration:'none', color:"skyblue", fontFamily: "Josefin Sans" }} to="/">Meet Your Classmates</Link>
         <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />
       </Header>
       {/* <Header as="h2" floated="right">

@@ -83,15 +83,15 @@ export default function SignUpPage(props) {
   }
 
   return (
-    <Grid textAlign="center" style={{background: "linear-gradient(#e66465, #9198e5)"}} verticalAlign="middle">
+    <Grid textAlign="center" style={{background: "linear-gradient(#e66465, #9198e5)", fontFamily:"Josefin Sans"}} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Header as="h3" color="black" textAlign="center">
+        <Header style={{fontFamily:"Josefin Sans"}} as="h3" color="black" textAlign="center">
           <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
           Sign Up for Meet Your Classmates
           <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
         </Header>
         <Form autoComplete="off" onSubmit={handleSubmit} style={{color:"pink"}}>
-          <Segment style={{background: "linear-gradient(#e66465, #9198e5, #e66465, #9198e5)"}} inverted color="blue" stacked tertiary>
+          <Segment style={{background: "linear-gradient(#e66465, #9198e5, #e66465, #9198e5)"}} color="blue" stacked tertiary>
             <Form.Input
               name="username"
               placeholder="cutie123"
@@ -191,7 +191,7 @@ export default function SignUpPage(props) {
                 required
               />
             </Form.Field>
-            <Button animated type="submit" className="btn" color="pink">
+            <Button animated type="submit" className="btn" color="pink" style={{fontFamily:"Josefin Sans"}}>
             <Button.Content visible>Sign-Up</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow right' />Let's go!

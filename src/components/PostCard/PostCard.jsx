@@ -57,7 +57,7 @@ function PostCard({
   // so the user has clikced on the heart, so the heart should be red,
   // if nothing was found then liked is -1 so the heart should be grey,
   // which means the logged in user is not in the post.likes array
-  const likeColor = likeIndex > -1 ? "green" : "grey";
+  const likeColor = likeIndex > -1 ? "blue" : "grey";
   const dislikeColor = dislikeIndex > -1 ? "red" : "grey";
 
   // removeLike needs to accept the like id
@@ -80,7 +80,7 @@ function PostCard({
     console.log(user._id, "<--user._id")
   return (
     // <Segment>
-    <Card color="blue"/*{colors[getRand(0, 8)]}*/ key={post._id} raised>
+    <Card color="blue"/*{colors[getRand(0, 8)]}*/ key={post._id} raised >
       <Card.Content style={{background: "linear-gradient(#e66465, #9198e5, #e66465, #9198e5)"}} textAlign="left">
       {/* <Accordion>
         <Accordion.Title
@@ -141,21 +141,21 @@ function PostCard({
           </Reveal.Content>
         </Reveal>
         
-        <Segment style={{backgroundColor: "white", color: "black"}}  inverted/*{colors[getRand(0, 9)]}*/ tertiary size="tiny">
-          <Card.Content>
+        <Segment style={{backgroundColor: "white", color: "black" }}  inverted/*{colors[getRand(0, 9)]}*/ tertiary size="tiny">
+          <Card.Content style={{fontFamily: "Josefin Sans"}}>
             <Divider />
-            <Card.Description>
-              <h4>{post.q1}</h4>
+            <Card.Description style={{fontFamily: "Josefin Sans"}}>
+              <h4 style={{fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q1}</h4>
             </Card.Description>
-            <Card.Description textAlign="right">{post.a1}</Card.Description>
+            <Card.Description style={{color:"blue", fontFamily: "Josefin Sans", fontSize:"18px"}} textAlign="right">{post.a1}</Card.Description>
             <Card.Description>
-              <h4>{post.q2}</h4>
+              <h4 style={{fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q2}</h4>
             </Card.Description>
-            <Card.Description textAlign="right">{post.a2}</Card.Description>
+            <Card.Description style={{color:"blue", fontFamily: "Josefin Sans", fontSize:"18px"}} textAlign="right">{post.a2}</Card.Description>
             <Card.Description>
-              <h4>{post.q3}</h4>
+              <h4 style={{fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q3}</h4>
             </Card.Description>
-            <Card.Description textAlign="right">{post.a3}</Card.Description>
+            <Card.Description style={{color:"blue", fontFamily: "Josefin Sans", fontSize:"18px"}} textAlign="right">{post.a3}</Card.Description>
             {/* <Image
               size="tiny"
               style={{ width: 100, height: 50 }}
