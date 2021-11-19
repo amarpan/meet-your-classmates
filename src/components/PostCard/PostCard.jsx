@@ -7,6 +7,7 @@ import {
   Reveal,
   Button,
   Segment,
+  Accordion
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 // import { rawListeners } from "../../../models/post";
@@ -79,11 +80,41 @@ function PostCard({
     console.log(user._id, "<--user._id")
   return (
     // <Segment>
-    <Card color={colors[getRand(0, 8)]} key={post._id} raised>
-      <Card.Content textAlign="left">
-        {/* <Reveal animated="move right">
+    <Card color="blue"/*{colors[getRand(0, 8)]}*/ key={post._id} raised>
+      <Card.Content style={{backgroundColor:"skyblue"}} textAlign="left">
+      {/* <Accordion>
+        <Accordion.Title
+          // active={activeIndex === 0}
+          index={0}
+          // onClick={this.handleClick}
+        >
+          <Icon name='dropdown' />
+          What is a dog?
+        </Accordion.Title>
+        <Accordion.Content>
+          <p>
+            A dog is a type of domesticated animal. Known for its loyalty and
+            faithfulness, it can be found as a welcome guest in many households
+            across the world.
+          </p>
+        
+        </Accordion.Content>
+        </Accordion>
+        <Accordion>
+          <Accordion.Title>
+          <Icon name='dropdown' />
+          Can you guess the user?
+          </Accordion.Title>
+          <Accordion.Content>
+            <p>
+            test
+            </p>
+          </Accordion.Content>
+        </Accordion> */}
+        
+        <Reveal animated="move down">
           <Reveal.Content visible>
-            <Button.Group>
+            <Button.Group color="grey">
               <Button>Who</Button>
               <Button>could</Button>
               <Button>it</Button>
@@ -91,7 +122,8 @@ function PostCard({
               <Button>be?</Button>
             </Button.Group>
           </Reveal.Content>
-          <Reveal.Content hidden> */}
+          <Reveal.Content hidden>
+          <Card.Header>
             <Link to={`/${post?.user?.username}`}>
               <Image
                 size="large"
@@ -103,10 +135,13 @@ function PostCard({
                 }
               />
               {post?.user?.username} ({post?.user?.fullName})
+              
             </Link>
-          {/* </Reveal.Content>
-        </Reveal> */}
-        <Segment inverted color={colors[getRand(0, 9)]} tertiary size="tiny">
+            </Card.Header>
+          </Reveal.Content>
+        </Reveal>
+        
+        <Segment  inverted/*{colors[getRand(0, 9)]}*/ tertiary size="tiny">
           <Card.Content>
             <Divider />
             <Card.Description>
@@ -129,7 +164,11 @@ function PostCard({
               ui={true}
               floated="right"
             /> */}
-            <Icon
+            
+          </Card.Content>
+          <Card.Content style={{backgroundColor:"skyblue"}} extra>
+          <Divider />
+          <Icon
               name={"thumbs up"}
               size="large"
               color={likeColor}
@@ -151,7 +190,8 @@ function PostCard({
               />
               : ""
             }
-            
+             <Divider />
+
           </Card.Content>
         </Segment>
       </Card.Content>

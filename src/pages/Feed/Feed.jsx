@@ -137,12 +137,12 @@ export default function Feed(props) {
 
 
   return (
-    <Grid>
+    <Grid >
       <Grid.Row centered>
-      <Segment inverted color="green" padded="very" tertiary>
+      <Segment style={{backgroundColor:"skyblue"}} padded="very" tertiary>
       <Grid.Column color="red" key="red" style={{ maxWidth: 450 }}>
           
-          <PostForm handleAddPost={handleAddPost} />
+          <PostForm  handleAddPost={handleAddPost} />
          <Divider hidden section />
          {/* <Divider section /> */}
         </Grid.Column>

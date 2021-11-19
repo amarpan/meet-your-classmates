@@ -16,15 +16,24 @@ import {
 } from "semantic-ui-react";
 
 export default function PageHeader({ user, handleLogout }) {
-  return (
-    <Segment inverted color="black" clearing>
-      <Menu inverted  tertiary>
-        <Menu.Item>
-          <Link to="/">Home</Link>
-        </Menu.Item>
 
-        <Menu.Item>
-          <Link to={`/${user.username}`}>
+  return (
+    
+    <Segment inverted color="black" clearing >
+      
+      <Menu inverted  tertiary >
+      <Link to="/">
+      <Menu.Item >
+          Home
+        </Menu.Item>
+        </Link>
+
+        {/* <Menu.Item >
+          <Link to="/">Home</Link>
+        </Menu.Item> */}
+<Link to={`/${user.username}`}>
+        <Menu.Item style={{paddingTop:8}}>
+          
             <Image
               avatar
               src={
@@ -34,20 +43,23 @@ export default function PageHeader({ user, handleLogout }) {
               }
               avatar
             ></Image>
-          </Link>
+          
         </Menu.Item>
+        </Link>
 
         <Menu.Menu position="right">
+        <Link to="" onClick={handleLogout}>
           <Menu.Item>
-            <Link to="" onClick={handleLogout}>
+            
               Logout
-            </Link>
+           
           </Menu.Item>
+          </Link>
         </Menu.Menu>
       </Menu>
       <Header as="h1" textAlign="center" color="red">
         <Image src="https://i.ibb.co/vD8wqgj/bookout.png" />
-        <Link to="/">Meet Your Classmates</Link>
+        <Link style={{textDecoration:'none', color:"skyblue"}} to="/">Meet Your Classmates</Link>
         <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />
       </Header>
       {/* <Header as="h2" floated="right">
