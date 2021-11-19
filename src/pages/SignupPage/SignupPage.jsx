@@ -83,15 +83,15 @@ export default function SignUpPage(props) {
   }
 
   return (
-    <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
+    <Grid textAlign="center" style={{background: "linear-gradient(#e66465, #9198e5)"}} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Header as="h3" color="orange" textAlign="center">
+        <Header as="h3" color="black" textAlign="center">
           <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
           Sign Up for Meet Your Classmates
           <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
         </Header>
-        <Form autoComplete="off" onSubmit={handleSubmit}>
-          <Segment inverted color="blue" stacked tertiary>
+        <Form autoComplete="off" onSubmit={handleSubmit} style={{color:"pink"}}>
+          <Segment style={{background: "linear-gradient(#e66465, #9198e5, #e66465, #9198e5)"}} inverted color="blue" stacked tertiary>
             <Form.Input
               name="username"
               placeholder="cutie123"
@@ -191,7 +191,7 @@ export default function SignUpPage(props) {
                 required
               />
             </Form.Field>
-            <Button animated type="submit" className="btn" color="orange">
+            <Button animated type="submit" className="btn" color="pink">
             <Button.Content visible>Sign-Up</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow right' />Let's go!
@@ -200,8 +200,8 @@ export default function SignUpPage(props) {
           </Segment>
           {error ? <ErrorMessage error={error} /> : null}
         </Form>
-        <Message>
-            Already a member? <Link to="/login">Login</Link>
+        <Message style={{background: "linear-gradient(#e66465, #9198e5)", color:"white"}} >
+            Already a member? <Link style={{color:"black", textDecoration:"underline"}} to="/login">Login</Link>
           </Message>
           {error ? <ErrorMessage error={error} /> : null}
       </Grid.Column>

@@ -62,25 +62,26 @@ export default function LoginPage(props) {
 
   return (
     <>
-      <Grid
+      <Grid 
         textAlign="center"
-        style={{ height: "100vh" }}
+        style={{ height: "100vh", background: "linear-gradient(#e66465, #9198e5)" }}
         verticalAlign="middle"
       >
         <Grid.Column style={{ maxWidth: 450 }}>
-          <Header as="h3" color="orange" textAlign="center">
+          <Header  as="h3" color="black" textAlign="center">
             <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
             Log-in to Meet Your Classmates
             <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
           </Header>
-          <Form onSubmit={handleSubmit}>
-            <Segment inverted color="blue" stacked tertiary>
+          <Form  onSubmit={handleSubmit}>
+            <Segment style={{background: "linear-gradient(#e66465, #9198e5)"}} inverted color="blue" stacked tertiary>
               <Form.Input
                 type="email"
                 name="email"
                 placeholder="email"
                 value={state.email}
                 onChange={handleChange}
+                label="Email"
                 required
               />
               <Form.Input
@@ -89,11 +90,12 @@ export default function LoginPage(props) {
                 placeholder="password"
                 value={state.password}
                 onChange={handleChange}
+                label="Password"
                 required
               />
               <Button
                 animated
-                color="orange"
+                color="pink"
                 fluid
                 size="large"
                 type="submit"
@@ -101,13 +103,13 @@ export default function LoginPage(props) {
               >
                 <Button.Content visible>Login</Button.Content>
                 <Button.Content hidden>
-                  <Icon name="arrow right" /> Ready to Login
+                  <Icon name="arrow right" /> Let's go!
                 </Button.Content>
               </Button>
             </Segment>
           </Form>
-          <Message>
-            New to us? <Link to="/signup">Sign Up</Link>
+          <Message style={{background: "linear-gradient(#e66465, #9198e5)", color:"white"}}>
+            New to us? <Link style={{color:"black", textDecoration:"underline"}} to="/signup">Sign Up</Link>
           </Message>
           {error ? <ErrorMessage error={error} /> : null}
         </Grid.Column>
