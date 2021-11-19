@@ -94,34 +94,38 @@ export default function SignUpPage(props) {
           <Segment inverted color="blue" stacked tertiary>
             <Form.Input
               name="username"
-              placeholder="username"
+              placeholder="cutie123"
               value={state.username}
               onChange={handleChange}
               color="yellow"
+              label="Username"
               required
             />
             <Form.Input
               type="email"
               name="email"
-              placeholder="email"
+              placeholder="fruity124@aol.com"
               value={state.email}
               onChange={handleChange}
+              label="Email"
               required
             />
             <Form.Input
               name="password"
               type="password"
-              placeholder="password"
+              placeholder="123password456"
               value={state.password}
               onChange={handleChange}
+              label="Password"
               required
             />
             <Form.Input
               name="passwordConf"
               type="password"
-              placeholder="Confirm Password"
+              placeholder="123password456"
               value={state.passwordConf}
               onChange={handleChange}
+              label="Confirm Password"
               required
             />
             <Form.Input
@@ -129,6 +133,7 @@ export default function SignUpPage(props) {
               placeholder="Richard Dickson"
               value={state.fullName}
               onChange={handleChange}
+              label="Full Name"
               required
             />
             <Form.Input
@@ -136,6 +141,7 @@ export default function SignUpPage(props) {
               placeholder="Raccoon City, CA, USA"
               value={state.location}
               onChange={handleChange}
+              label="Location"
               required
             />
             <Form.Input
@@ -143,31 +149,37 @@ export default function SignUpPage(props) {
               placeholder="https://www.linkedin.com/in/user"
               value={state.linkedin}
               onChange={handleChange}
+              label="LinkedIn (OPTIONAL)"
             />
             <Form.Input
               name="facebook"
               placeholder="https://www.facebook.com/user"
               value={state.facebook}
               onChange={handleChange}
+              label="Facebook (OPTIONAL)"
             />
             <Form.Input
               name="instagram"
               placeholder="https://www.instagram.com/user"
               value={state.instagram}
               onChange={handleChange}
+              label="Instagram (OPTIONAL)"
             />
             <Form.Input
               name="twitter"
               placeholder="https://twitter.com/user"
               value={state.twitter}
               onChange={handleChange}
+              label="Twitter (OPTIONAL)"
             />
 
             <Form.TextArea
               label="bio"
               name="bio"
-              placeholder="Tell us more about yourself..."
+              placeholder="The GOAT"
               onChange={handleChange}
+              label="Bio"
+              required
             />
             <Form.Field>
               <Form.Input
@@ -175,6 +187,8 @@ export default function SignUpPage(props) {
                 name="photo"
                 placeholder="upload image"
                 onChange={handleFileInput}
+                label="Profile Picture"
+                required
               />
             </Form.Field>
             <Button animated type="submit" className="btn" color="orange">

@@ -24,7 +24,7 @@ export default function ProfileBio({ user }) {
             <h3>Username: {user.username}</h3>
           </Segment>
           <Segment vertical>
-            <h3>Name: {user.fullName}</h3>
+            <h3>Full Name: {user.fullName}</h3>
           </Segment>
           <Segment vertical>
             <h3>Location: {user.location}</h3>
@@ -33,16 +33,16 @@ export default function ProfileBio({ user }) {
             <h3>Email: {user.email}</h3>
           </Segment>
           <Segment vertical>
-          <h3><a href={user.linkedin}>LinkedIn</a></h3>
+          <h3>LinkedIn: <a href={user.linkedin} target="_blank">{user.linkedin}</a></h3>
           </Segment>
           <Segment vertical>
-          <h3><a href={user.facebook}>Facebook</a></h3>
+          <h3>Facebook: <a href={user.facebook} target="_blank">{user.facebook}</a></h3>
           </Segment>
           <Segment vertical>
-          <h3><a href={user.instagram}>Instagram</a></h3>
+          <h3>Instagram: < a href={user.instagram} target="_blank">{user.instagram}</a></h3>
           </Segment>
           <Segment vertical>
-          <h3><a href={user.twitter}>Twitter</a></h3>
+          <h3>Twitter: <a href={user.twitter} target="_blank">{user.twitter}</a></h3>
           </Segment>
           
           <Segment>
