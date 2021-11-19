@@ -75,8 +75,8 @@ function PostCard({
   // if the logged in user is not in the post.likes array
   // heart should grey
   // onClick of the heart should addLike
-    console.log(post.user._id)
-    console.log(user._id)
+    console.log(post.user._id, "<--post.user._id")
+    console.log(user._id, "<--user._id")
   return (
     // <Segment>
     <Card color={colors[getRand(0, 8)]} key={post._id} raised>

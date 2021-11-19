@@ -16,7 +16,7 @@ export default function ProfileBio({ user }) {
                 : "https://react.semantic-ui.com/images/wireframe/square-image.png"
             } `}
             avatar
-            size="big"
+            size="large"
           />
         </Grid.Column>
         <Grid.Column textAlign="left" style={{ maxWidth: 450 }}>

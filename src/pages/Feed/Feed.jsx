@@ -155,7 +155,7 @@ export default function Feed(props) {
           <PostFeed
             posts={posts}
             isProfile={false}
-            numPhotosCol={3}
+            numPhotosCol={2}
             loading={loading}
             user={props.user}
             addLike={addLike}

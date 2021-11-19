@@ -23,7 +23,9 @@ const postSchema = new mongoose.Schema({
     // photoUrl: String,
     likes: [likesSchema], // < one post has many likes
     dislikes: [dislikesSchema] // < one post has many likes
-  })
+  }, {
+    timestamps: true
+  });
  
 
 module.exports = mongoose.model('Post', postSchema);
