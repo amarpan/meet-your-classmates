@@ -81,7 +81,7 @@ function PostCard({
     // <Segment>
     <Card color={colors[getRand(0, 8)]} key={post._id} raised>
       <Card.Content textAlign="left">
-        <Reveal animated="move right">
+        {/* <Reveal animated="move right">
           <Reveal.Content visible>
             <Button.Group>
               <Button>Who</Button>
@@ -91,7 +91,7 @@ function PostCard({
               <Button>be?</Button>
             </Button.Group>
           </Reveal.Content>
-          <Reveal.Content hidden>
+          <Reveal.Content hidden> */}
             <Link to={`/${post?.user?.username}`}>
               <Image
                 size="large"
@@ -104,8 +104,8 @@ function PostCard({
               />
               {post?.user?.username} ({post?.user?.fullName})
             </Link>
-          </Reveal.Content>
-        </Reveal>
+          {/* </Reveal.Content>
+        </Reveal> */}
         <Segment inverted color={colors[getRand(0, 9)]} tertiary size="tiny">
           <Card.Content>
             <Divider />
@@ -143,12 +143,15 @@ function PostCard({
               onClick={clickHandlerDis}
             />
             {post.dislikes.length} Dislikes {""}
-            {/* {post.user._id === user._id  */}
-              <Icon 
+            {post.user._id === user._id 
+             ? <Icon 
               name="delete" 
               style={{ float: "right" }}
               onClick={clickHandlerPost} 
               />
+              : ""
+            }
+            
           </Card.Content>
         </Segment>
       </Card.Content>
