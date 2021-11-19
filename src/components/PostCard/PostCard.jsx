@@ -75,7 +75,8 @@ function PostCard({
   // if the logged in user is not in the post.likes array
   // heart should grey
   // onClick of the heart should addLike
-
+    console.log(post.user._id)
+    console.log(user._id)
   return (
     // <Segment>
     <Card color={colors[getRand(0, 8)]} key={post._id} raised>
@@ -91,17 +92,17 @@ function PostCard({
             </Button.Group>
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Link to={`/${post.user.username}`}>
+            <Link to={`/${post?.user?.username}`}>
               <Image
                 size="large"
                 avatar
                 src={
-                  post.user.photoUrl
-                    ? post.user.photoUrl
+                  post?.user?.photoUrl
+                    ? post?.user?.photoUrl
                     : "https://react.semantic-ui.com/images/wireframe/square-image.png"
                 }
               />
-              {post.user.username} ({post.user.fullName})
+              {post?.user?.username} ({post?.user?.fullName})
             </Link>
           </Reveal.Content>
         </Reveal>
@@ -142,7 +143,8 @@ function PostCard({
               onClick={clickHandlerDis}
             />
             {post.dislikes.length} Dislikes {""}
-            <Icon 
+            {/* {post.user._id === user._id  */}
+              <Icon 
               name="delete" 
               style={{ float: "right" }}
               onClick={clickHandlerPost} 

@@ -8,6 +8,8 @@ import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import userService from "../../utils/userService";
 import * as likesApi from "../../utils/likesApi";
 import * as dislikesApi from "../../utils/dislikesApi";
+import * as postsApi from "../../utils/postApi";
+
 
 export default function ProfilePage(props) {
   const [posts, setPosts] = useState([]);
@@ -79,6 +81,17 @@ export default function ProfilePage(props) {
     }
   }
 
+  async function deletePost(postId){
+    try {
+      const data = await postsApi.deletePost(postId);
+      console.log(data, " <- this is data the response from likes create");
+      getProfile();
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
+  }
+
   // Always check the error before loading, because if there is an error
   // we know something went wrong with the fetch call, therefore the http request
   // is complete
@@ -108,6 +121,7 @@ export default function ProfilePage(props) {
             removeLike={removeLike}
             addDislike={addDislike}
             removeDislike={removeDislike}
+            deletePost={deletePost}
           />
         </Grid.Column>
       </Grid.Row>

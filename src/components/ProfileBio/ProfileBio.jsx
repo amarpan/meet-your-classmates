@@ -2,6 +2,9 @@ import React from "react";
 import { Image, Grid, Segment } from "semantic-ui-react";
 
 export default function ProfileBio({ user }) {
+
+  
+
   return (
     <Grid textAlign="center" columns={2} className="Profile">
       <Grid.Row>
@@ -13,7 +16,7 @@ export default function ProfileBio({ user }) {
                 : "https://react.semantic-ui.com/images/wireframe/square-image.png"
             } `}
             avatar
-            size="small"
+            size="big"
           />
         </Grid.Column>
         <Grid.Column textAlign="left" style={{ maxWidth: 450 }}>
