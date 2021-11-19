@@ -49,7 +49,7 @@ export default function PageHeader({ user, handleLogout }) {
 
         <Menu.Menu position="right">
         <Link to="" onClick={handleLogout}>
-          <Menu.Item>
+          <Menu.Item position="right">
             
               Logout
            

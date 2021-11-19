@@ -81,7 +81,7 @@ function PostCard({
   return (
     // <Segment>
     <Card color="blue"/*{colors[getRand(0, 8)]}*/ key={post._id} raised>
-      <Card.Content style={{backgroundColor:"skyblue"}} textAlign="left">
+      <Card.Content style={{background: "linear-gradient(#e66465, #9198e5, #e66465, #9198e5)"}} textAlign="left">
       {/* <Accordion>
         <Accordion.Title
           // active={activeIndex === 0}
@@ -114,8 +114,8 @@ function PostCard({
         
         <Reveal animated="move down">
           <Reveal.Content visible>
-            <Button.Group color="grey">
-              <Button>Who</Button>
+            <Button.Group  color="grey">
+              <Button >Who</Button>
               <Button>could</Button>
               <Button>it</Button>
               <Button>possibly</Button>
@@ -124,7 +124,7 @@ function PostCard({
           </Reveal.Content>
           <Reveal.Content hidden>
           <Card.Header>
-            <Link to={`/${post?.user?.username}`}>
+            <Link  style={{color:"black"}} to={`/${post?.user?.username}`}>
               <Image
                 size="large"
                 avatar
@@ -141,7 +141,7 @@ function PostCard({
           </Reveal.Content>
         </Reveal>
         
-        <Segment  inverted/*{colors[getRand(0, 9)]}*/ tertiary size="tiny">
+        <Segment style={{backgroundColor: "white", color: "black"}}  inverted/*{colors[getRand(0, 9)]}*/ tertiary size="tiny">
           <Card.Content>
             <Divider />
             <Card.Description>
@@ -166,7 +166,7 @@ function PostCard({
             /> */}
             
           </Card.Content>
-          <Card.Content style={{backgroundColor:"skyblue"}} extra>
+          <Card.Content style={{background: "linear-gradient(#e66465, #9198e5)"}} extra>
           <Divider />
           <Icon
               name={"thumbs up"}

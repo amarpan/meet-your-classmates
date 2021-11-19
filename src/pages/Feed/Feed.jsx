@@ -137,9 +137,10 @@ export default function Feed(props) {
 
 
   return (
-    <Grid >
+    // <div className="card" style={{background: "linear-gradient(#e66465, #9198e5);" }}>sada</div>
+    <Grid style={{background: "linear-gradient(#e66465, #9198e5, #e66465, #9198e5)"}}>
       <Grid.Row centered>
-      <Segment style={{backgroundColor:"skyblue"}} padded="very" tertiary>
+      <Segment >
       <Grid.Column color="red" key="red" style={{ maxWidth: 450 }}>
           
           <PostForm  handleAddPost={handleAddPost} />
@@ -155,7 +156,7 @@ export default function Feed(props) {
           <PostFeed
             posts={posts}
             isProfile={false}
-            numPhotosCol={2}
+            numPhotosCol={3}
             loading={loading}
             user={props.user}
             addLike={addLike}

@@ -104,7 +104,7 @@ export default function ProfilePage(props) {
   }
 
   return (
-    <Grid>
+    <Grid style={{background: "linear-gradient(#e66465, #9198e5)"}}>
       <Grid.Row>
         <Grid.Column>
           <ProfileBio user={user} />
