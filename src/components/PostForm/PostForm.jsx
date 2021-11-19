@@ -112,7 +112,7 @@ export default function AddSurveyForm(props) {
             /> */}
             <Form.Input
               icon="write"
-              size="tiny"
+              size="mini"
               className="form-control"
               name="a1"
               label={rand1}
@@ -132,7 +132,7 @@ export default function AddSurveyForm(props) {
             /> */}
             <Form.Input
               icon="write"
-              size="tiny"
+              size="mini"
               className="form-control"
               name="a2"
               label={rand2}
@@ -152,7 +152,7 @@ export default function AddSurveyForm(props) {
             /> */}
             <Form.Input
               icon="write"
-              size="tiny"
+              size="mini"
               className="form-control"
               name="a3"
               label={rand3}

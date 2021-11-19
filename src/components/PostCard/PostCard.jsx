@@ -60,18 +60,17 @@ function PostCard({
   const dislikeColor = dislikeIndex > -1 ? "red" : "grey";
 
   // removeLike needs to accept the like id
-  const clickHandler =
-    likeIndex > -1
-      ? () => removeLike(post.likes[likeIndex]._id)
-      : () => addLike(post._id);
+  const clickHandler = () => likeIndex > -1
+      ?  removeLike(post.likes[likeIndex]._id)
+      :  addLike(post._id);
+  
 
-  const clickHandlerDis =
-    dislikeIndex > -1
-      ? () => removeDislike(post.dislikes[dislikeIndex]._id)
-      : () => addDislike(post._id);
+  const clickHandlerDis = () =>  dislikeIndex > -1
+      ? removeDislike(post.dislikes[dislikeIndex]._id)
+      : addDislike(post._id);
+  
 
-  const clickHandlerPost =
-    deletePost(post._id)
+  const clickHandlerPost = () => deletePost(post._id)
 
   // if the logged in user is not in the post.likes array
   // heart should grey
