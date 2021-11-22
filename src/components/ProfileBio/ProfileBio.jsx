@@ -19,30 +19,30 @@ export default function ProfileBio({ user }) {
             size="medium"
           />
         </Grid.Column>
-        <Grid.Column textAlign="left" style={{ maxWidth: 450 }}>
+        <Grid.Column textAlign="left" style={{ maxWidth: 450, fontSize: "12px" }}>
           <Segment color="red" vertical>
-            <h3>Username: {user.username}</h3>
+            <h4>Username: {user.username}</h4>
           </Segment>
           <Segment vertical>
-            <h3>Full Name: {user.fullName}</h3>
+            <h4>Full Name: {user.fullName}</h4>
           </Segment>
           <Segment vertical>
-            <h3>Location: {user.location}</h3>
+            <h4>Location: {user.location}</h4>
           </Segment>
           <Segment vertical>
-            <h3>Email: {user.email}</h3>
+            <h4>Email: {user.email}</h4>
           </Segment>
           <Segment vertical>
-          <h3>LinkedIn: <a href={user.linkedin} target="_blank">{user.linkedin}</a></h3>
+          <h4>LinkedIn: <a href={user.linkedin} target="_blank">{user.linkedin}</a></h4>
           </Segment>
           <Segment vertical>
-          <h3>Facebook: <a href={user.facebook} target="_blank">{user.facebook}</a></h3>
+          <h4>Facebook: <a href={user.facebook} target="_blank">{user.facebook}</a></h4>
           </Segment>
           <Segment vertical>
-          <h3>Instagram: < a href={user.instagram} target="_blank">{user.instagram}</a></h3>
+          <h4>Instagram: < a href={user.instagram} target="_blank">{user.instagram}</a></h4>
           </Segment>
           <Segment vertical>
-          <h3>Twitter: <a href={user.twitter} target="_blank">{user.twitter}</a></h3>
+          <h4>Twitter: <a href={user.twitter} target="_blank">{user.twitter}</a></h4>
           </Segment>
           
           <Segment>

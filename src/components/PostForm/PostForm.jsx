@@ -177,8 +177,10 @@ export default function AddSurveyForm(props) {
               <Button.Content visible>Add Survey</Button.Content>
               <Button.Content hidden>
                 {/* <Icon name="arrow right" />
-                Submit */} Submit!
+                Submit */} Submit
                 <img src="https://emojis.slackmojis.com/emojis/images/1613367715/12976/fox_jump.gif?1613367715" width="15" height="15" />
+                <img src="https://emojis.slackmojis.com/emojis/images/1619571094/33817/jumping_fox.gif?1619571094" width="15" height="15" />
+
               </Button.Content>
             </Button>
           </Form>

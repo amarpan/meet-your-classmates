@@ -94,7 +94,7 @@ export default function LoginPage(props) {
                 required
               />
               <Button
-                animated
+                animated="vertical"
                 color="pink"
                 fluid
                 size="large"
@@ -103,7 +103,8 @@ export default function LoginPage(props) {
               >
                 <Button.Content visible>Login</Button.Content>
                 <Button.Content hidden>
-                  <Icon name="arrow right" /> Let's go!
+                  Let's go!
+                <img src="https://emojis.slackmojis.com/emojis/images/1619738173/34112/fire_jump.gif?1619738173" width="15" height="15" />
                 </Button.Content>
               </Button>
             </Segment>

@@ -1,10 +1,20 @@
 import React, { useState } from "react";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
-import { Button, Form, Grid, Header, Image, Segment, Icon, Message } from "semantic-ui-react";
+import {
+  Button,
+  Form,
+  Grid,
+  Header,
+  Image,
+  Segment,
+  Icon,
+  Message,
+} from "semantic-ui-react";
 import userService from "../../utils/userService";
 import { useNavigate, Link } from "react-router-dom";
 
-let colors = [ // 9 colors total
+let colors = [
+  // 9 colors total
   "red",
   "orange",
   "yellow",
@@ -13,8 +23,8 @@ let colors = [ // 9 colors total
   "teal",
   "blue",
   "violet",
-  "purple"
-]
+  "purple",
+];
 
 function getRand(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -83,15 +93,38 @@ export default function SignUpPage(props) {
   }
 
   return (
-    <Grid textAlign="center" style={{background: "linear-gradient(#e66465, #9198e5)", fontFamily:"Josefin Sans"}} verticalAlign="middle">
+    <Grid
+      textAlign="center"
+      style={{
+        background: "linear-gradient(#e66465, #9198e5)",
+        fontFamily: "Josefin Sans",
+      }}
+      verticalAlign="middle"
+    >
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Header style={{fontFamily:"Josefin Sans"}} as="h3" color="black" textAlign="center">
+        <Header
+          style={{ fontFamily: "Josefin Sans" }}
+          as="h3"
+          color="black"
+          textAlign="center"
+        >
           <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
           Sign Up for Meet Your Classmates
           <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
         </Header>
-        <Form autoComplete="off" onSubmit={handleSubmit} style={{color:"pink"}}>
-          <Segment style={{background: "linear-gradient(#e66465, #9198e5, #e66465, #9198e5)"}} color="blue" stacked tertiary>
+        <Form
+          autoComplete="off"
+          onSubmit={handleSubmit}
+          style={{ color: "pink" }}
+        >
+          <Segment
+            style={{
+              background: "linear-gradient(#e66465, #9198e5, #e66465, #9198e5)",
+            }}
+            color="blue"
+            stacked
+            tertiary
+          >
             <Form.Input
               name="username"
               placeholder="cutie123"
@@ -191,19 +224,37 @@ export default function SignUpPage(props) {
                 required
               />
             </Form.Field>
-            <Button animated type="submit" className="btn" color="pink" style={{fontFamily:"Josefin Sans"}}>
-            <Button.Content visible>Sign-Up</Button.Content>
-      <Button.Content hidden>
-        <Icon name='arrow right' />Let's go!
-      </Button.Content>
+            <Button
+              animated="vertical"
+              type="submit"
+              className="btn"
+              color="pink"
+              style={{ fontFamily: "Josefin Sans" }}
+            >
+              <Button.Content visible>Sign-Up</Button.Content>
+              <Button.Content hidden>
+                Let's go!
+                <img src="https://emojis.slackmojis.com/emojis/images/1618879340/31931/floating-rock_jump.gif?1618879340" width="15" height="15" />
+              </Button.Content>
             </Button>
           </Segment>
           {error ? <ErrorMessage error={error} /> : null}
         </Form>
-        <Message style={{background: "linear-gradient(#e66465, #9198e5)", color:"white"}} >
-            Already a member? <Link style={{color:"black", textDecoration:"underline"}} to="/login">Login</Link>
-          </Message>
-          {error ? <ErrorMessage error={error} /> : null}
+        <Message
+          style={{
+            background: "linear-gradient(#e66465, #9198e5)",
+            color: "white",
+          }}
+        >
+          Already a member?{" "}
+          <Link
+            style={{ color: "black", textDecoration: "underline" }}
+            to="/login"
+          >
+            Login
+          </Link>
+        </Message>
+        {error ? <ErrorMessage error={error} /> : null}
       </Grid.Column>
     </Grid>
   );
