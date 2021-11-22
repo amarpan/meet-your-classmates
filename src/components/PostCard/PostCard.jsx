@@ -124,7 +124,7 @@ function PostCard({
           </Reveal.Content>
           <Reveal.Content hidden>
           <Card.Header>
-            <Link  style={{color:"black"}} to={`/${post?.user?.username}`}>
+            <Link  style={{color:"yellow"}} to={`/${post?.user?.username}`}>
               <Image
                 size="large"
                 avatar
@@ -145,15 +145,15 @@ function PostCard({
           <Card.Content style={{fontFamily: "Josefin Sans"}}>
             <Divider />
             <Card.Description style={{fontFamily: "Josefin Sans"}}>
-              <h4 style={{fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q1}</h4>
+              <h4 style={{color: "gray",fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q1}</h4>
             </Card.Description>
             <Card.Description style={{color:"blue", fontFamily: "Josefin Sans", fontSize:"18px"}} textAlign="right">{post.a1}</Card.Description>
             <Card.Description>
-              <h4 style={{fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q2}</h4>
+              <h4 style={{color:"gray", fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q2}</h4>
             </Card.Description>
             <Card.Description style={{color:"blue", fontFamily: "Josefin Sans", fontSize:"18px"}} textAlign="right">{post.a2}</Card.Description>
             <Card.Description>
-              <h4 style={{fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q3}</h4>
+              <h4 style={{color:"gray", fontFamily: "Josefin Sans", fontSize:"20px"}}>{post.q3}</h4>
             </Card.Description>
             <Card.Description style={{color:"blue", fontFamily: "Josefin Sans", fontSize:"18px"}} textAlign="right">{post.a3}</Card.Description>
             {/* <Image

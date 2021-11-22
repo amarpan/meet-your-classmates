@@ -173,11 +173,12 @@ export default function AddSurveyForm(props) {
               onChange={handleFileInput}
               required
             /> */}
-            <Button animated color="green" type="submit" className="btn">
+            <Button animated='vertical' color="green" type="submit" className="btn">
               <Button.Content visible>Add Survey</Button.Content>
               <Button.Content hidden>
-                <Icon name="arrow right" />
-                Submit
+                {/* <Icon name="arrow right" />
+                Submit */} Submit!
+                <img src="https://emojis.slackmojis.com/emojis/images/1613367715/12976/fox_jump.gif?1613367715" width="15" height="15" />
               </Button.Content>
             </Button>
           </Form>
