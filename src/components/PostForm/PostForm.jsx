@@ -13,15 +13,45 @@ import {
 } from "semantic-ui-react";
 
 let questions = [
-  "What does your computer setup look like?",
-  "What would be your dream job?",
-  "What is your favorite part about GA?",
+  "How many monitors do you have and what size are they?",
+  "What computer and OS are you using for GA?",
+  "What is your dream programming job?",
+  "What has been your favorite part about GA?",
+  "What are you going to miss the most about GA?",
   "What has been the hardest part of GA for you so far?",
-  "What was your previous programming experience before GA?",
-  "If you were a fruit, what would you be and why?",
+  "What VS Code theme do you use?",
+  "Front-End or Back-End?",
   "Have you ever fallen asleep during a GA lecture?",
-  "Favorite programming language? ",
+  "Favorite programming language?",
   "Python or JavaScript?",
+  "If you could sum up GA SEI in one word, what would it be?",
+  "Django or Express?",
+  "What has been your favorite unit so far?",
+  "How many all-nighters have you pulled trying to survive GA SEI?",
+  "Before leaving GA, what's something you'd like to say to your classmates or instructors?",
+  "If you had to do GA SEI all over again (God forbid), what would you do differently?",
+  "In your opinion, how could GA SEI be better?",
+  "Favorite song to get in the zone and program to?",
+  "What git command(s) do you always forget?",
+  "Mac, Windows, or Linux?",
+  "How many lectures have you had to rewatch?",
+  "Who has been your favorite person at GA?",
+  "What's the first thing you're going to do when GA SEI is over?",
+  "What programming principles are you still iffy about / need more practice with?",
+  "MongoDB or PostgreSQL?",
+  "Why do you think it's called 'General Assembly?'",
+  "Flexbox or CSS Grid",
+  "Regular functions or arrow functions?",
+  "Google oAuth, Token-based, or Django built-in authorization?",
+  "How many times have you had to attend office hours?",
+  "What was the hardest deliverable (or one that you skipped)?",
+  "Programming by yourself or working in a group?",
+  "Will you ever be the same after GA?",
+  "If you could add a custom emoji/gif to Slack, what would it be?",
+  ""
+
+
+
 ];
 
 let colors = [
@@ -41,9 +71,9 @@ function getRand(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-let rand1 = questions[getRand(0, 9)];
-let rand2 = questions[getRand(0, 9)];
-let rand3 = questions[getRand(0, 9)];
+let rand1 = questions[getRand(0, 35)];
+let rand2 = questions[getRand(0, 35)];
+let rand3 = questions[getRand(0, 35)];
 
 export default function AddSurveyForm(props) {
   const [selectedFile, setSelectedFile] = useState("");
@@ -80,9 +110,9 @@ export default function AddSurveyForm(props) {
     formData.append("a3", state.a3);
     props.handleAddPost(state); // calling our function!
 
-    rand1 = questions[getRand(0, 5)];
-    rand2 = questions[getRand(0, 5)];
-    rand3 = questions[getRand(0, 5)];
+    rand1 = questions[getRand(0, 35)];
+    rand2 = questions[getRand(0, 35)];
+    rand3 = questions[getRand(0, 35)];
 
     setState({
       q1: rand1,
