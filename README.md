@@ -7,7 +7,7 @@ Meet Your Classmates is a hub where students can get to know and relate to their
 
 ## Screenshots
 
-<details open>
+<details>
  <summary>ERD</summary>
  
  | Description | Screenshot |
@@ -16,7 +16,7 @@ Meet Your Classmates is a hub where students can get to know and relate to their
  
 </details>
 
-<details open>
+<details>
  <summary>Wireframes</summary>
  
  | Description | Screenshot |
@@ -36,9 +36,7 @@ Meet Your Classmates is a hub where students can get to know and relate to their
  | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/" width="600">
  
 </details>
- 
-## Technologies Used
-React | Express | MongoDB | Node.js | JWT Auth | AWS | Heroku | draw.io | Javascript | HTML | CSS | <s>Punching Bag</s>
+
 
 ## Getting Started
 
@@ -55,7 +53,7 @@ React | Express | MongoDB | Node.js | JWT Auth | AWS | Heroku | draw.io | Javasc
 <details>
 <summary>How to Interact With Others' Posts</summary>
  
-1.  Posts may be "liked" or "disliked" by clicking on the thumbs up or down button on a post.
+1.  Posts may be "liked" or "disliked" by clicking on the thumbs up or down button on their card.
  
 2. To reveal the author of a post, hover over the "Who could it possibly be?" button.
  
@@ -63,6 +61,11 @@ React | Express | MongoDB | Node.js | JWT Auth | AWS | Heroku | draw.io | Javasc
 
  
 </details>
+ 
+## Technologies Used
+React | Semantic UI | JSX | Express | MongoDB | Node.js | JWT Auth | AWS | Heroku | draw.io | Javascript | HTML | CSS | <s>Punching Bag</s>
+
+
 
 
 ## Resources
@@ -82,8 +85,11 @@ React | Express | MongoDB | Node.js | JWT Auth | AWS | Heroku | draw.io | Javasc
 #### [Heroku Deployment](https://gatracker.herokuapp.com/) -->
 
 ## Next Steps
-+ Add sync functionality with Outcomes Google Classroom assignments
-+ Add sync functionality with Google Calendar
++ Add comment functionality on posts to harass others
++ <p style={{color:"red"}}>Add a super dislike button</p>
++ <s>Integrate Tinder API</s>
++ <s>Don't rip off pupstagram</s>
++ [x] Graduate GA
 
 
 

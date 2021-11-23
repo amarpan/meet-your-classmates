@@ -48,7 +48,7 @@ let questions = [
   "Programming by yourself or working in a group?",
   "Will you ever be the same after GA?",
   "If you could add a custom emoji/gif to Slack, what would it be?",
-  ""
+  "Favorite time of the day/night to code?"
 
 
 
@@ -71,9 +71,9 @@ function getRand(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-let rand1 = questions[getRand(0, 35)];
-let rand2 = questions[getRand(0, 35)];
-let rand3 = questions[getRand(0, 35)];
+let rand1 = questions[getRand(0, 36)];
+let rand2 = questions[getRand(0, 36)];
+let rand3 = questions[getRand(0, 36)];
 
 export default function AddSurveyForm(props) {
   const [selectedFile, setSelectedFile] = useState("");
@@ -110,9 +110,9 @@ export default function AddSurveyForm(props) {
     formData.append("a3", state.a3);
     props.handleAddPost(state); // calling our function!
 
-    rand1 = questions[getRand(0, 35)];
-    rand2 = questions[getRand(0, 35)];
-    rand3 = questions[getRand(0, 35)];
+    rand1 = questions[getRand(0, 36)];
+    rand2 = questions[getRand(0, 36)];
+    rand3 = questions[getRand(0, 36)];
 
     setState({
       q1: rand1,
