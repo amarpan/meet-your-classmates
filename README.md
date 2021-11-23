@@ -9,7 +9,7 @@ Meet Your Classmates is a hub where students can get to know and relate to their
 ## Screenshots
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.cropped.jpg" width="600">
+| <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.png" width="600">
 | <h3 align="center">Wireframes</h3> | <img src="public/Screenshots/ERD.MYC.cropped2.jpg" width="600">
 | <h3 align="center">Home Page</h3> | <img src="public/Screenshots/newtest.png" width="600">
 | <h3 align="center">Todos List</h3> | <img src="main_app/static/images/screenshots/todos_list_screenshot.jpg" width="600">
