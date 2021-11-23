@@ -9,12 +9,13 @@ Meet Your Classmates is a hub where students can get to know and relate to their
 ## Screenshots
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.png" width="600">
-| <h3 align="center">Wireframes</h3> | <img src="public/Screenshots/Wireframes.MYC.gif" width="600">
-| <h3 align="center">Home Page</h3> | <img src="public/Screenshots/newtest.png" width="600">
+| <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.png" width="600" height="175">
+| <h3 align="center">Wireframe - Home Page</h3> | <img src="public/Screenshots/Homepage.Wireframe.MYC.png" width="600" height="175">
+| <h3 align="center">Wireframe - Profile Page</h3> | <img src="public/Screenshots/ProfilePage.Wireframe.MYC.png" width="600" height="175">
 | <h3 align="center">Todos List</h3> | <img src="main_app/static/images/screenshots/todos_list_screenshot.jpg" width="600">
 | <h3 align="center">Todo Details</h3> | <img src="main_app/static/images/screenshots/todo_details_screenshot.jpg" width="600">
 | <h3 align="center">Add a Note</h3> | <img src="main_app/static/images/screenshots/note_add_screenshot.jpg" width="600">
+
 
 ## Technologies Used
 MongoDB | Express | React | Node.js | JWT Auth | AWS | Heroku | draw.io | Javascript |  HTML | CSS | <s>Punching Bag</s>

@@ -130,7 +130,7 @@ export default function AddSurveyForm(props) {
     <Grid inverted color="white" textAlign="center" verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 400, fontFamily:"Josefin Sans", fontSize:"28px" }}>
         {/* <Segment inverted color="gray" tertiary> */}
-          <Form size="mini" autoComplete="off" onSubmit={handleSubmit} style={{ height: "25vh", color:"white" }} >
+          <Form size="mini" autoComplete="off" onSubmit={handleSubmit} style={{ height: "33vh", color:"white" }} >
             {/* <Form.Input
               className="form-control"
               name="q1"
@@ -207,8 +207,9 @@ export default function AddSurveyForm(props) {
               <Button.Content visible>Add Survey</Button.Content>
               <Button.Content hidden>
                 {/* <Icon name="arrow right" />
-                Submit */} Submit
+                Submit */}
                 <img src="https://emojis.slackmojis.com/emojis/images/1613367715/12976/fox_jump.gif?1613367715" width="15" height="15" />
+                Submit
                 <img src="https://emojis.slackmojis.com/emojis/images/1619571094/33817/jumping_fox.gif?1619571094" width="15" height="15" />
 
               </Button.Content>
