@@ -86,7 +86,7 @@ React | Semantic UI | JSX | Express | MongoDB | Node.js | JWT Auth | AWS | Herok
 
 ## Next Steps
 + Add comment functionality on posts to harass others
-+ <p style={{color:"red"}}>Add a super dislike button</p>
++ Add a super dislike button</p>
 + <s>Integrate Tinder API</s>
 + <s>Don't rip off pupstagram</s>
 + [x] Survive GA using Linux
