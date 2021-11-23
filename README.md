@@ -2,38 +2,65 @@
  #### <h3 align="center">https://meetyourclassmates.herokuapp.com/</h3>
  <h5 align="center">Amar 'Pan' Panjwani</h5>
 
+## Introduction
+Meet Your Classmates is a hub where students can get to know and relate to their peers via completion of short 3-question mini-surveys. By learning about others' backgrounds, previous experiences, and interests, an atmosphere of community is created that is conducive to higher levels of learning and success. 
 
-
-## Description
-Meet Your Classmates is a hub where students can get to know and relate to their peers via completion of short 3-question surveys. By learning about others' backgrounds, previous experiences, and interests, an atmosphere of community is created that is most conducive to learning. 
 ## Screenshots
-| Description | Screenshot |
-|------------ | ------------|
-| <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.png" width="600" height="175">
-| <h3 align="center">Wireframe - Home Page</h3> | <img src="public/Screenshots/Homepage.Wireframe.MYC.png" width="600" height="175">
-| <h3 align="center">Wireframe - Profile Page</h3> | <img src="public/Screenshots/ProfilePage.Wireframe.MYC.png" width="600" height="175">
-| <h3 align="center">Todos List</h3> | <img src="main_app/static/images/screenshots/todos_list_screenshot.jpg" width="600">
-| <h3 align="center">Todo Details</h3> | <img src="main_app/static/images/screenshots/todo_details_screenshot.jpg" width="600">
-| <h3 align="center">Add a Note</h3> | <img src="main_app/static/images/screenshots/note_add_screenshot.jpg" width="600">
 
+<details open>
+ <summary>ERD</summary>
+ 
+ | Description | Screenshot |
+ |------------ | ------------|
+ | <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.png" width="600">
+ 
+</details>
 
+<details open>
+ <summary>Wireframes</summary>
+ 
+ | Description | Screenshot |
+ |------------ | ------------|
+ | <h3 align="center">Home Page</h3> | <img src="public/Screenshots/Homepage.Wireframe.MYC.png" width="600">
+ | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/ProfilePage.Wireframe.MYC.png" width="600">
+ 
+ 
+</details>
+
+<details>
+ <summary>Functionality</summary>
+ 
+ | Description | Screenshot |
+ |------------ | ------------|
+ | <h3 align="center">Feed Page</h3> | <img src="public/Screenshots/" width="600">
+ | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/" width="600">
+ 
+</details>
+ 
 ## Technologies Used
-MongoDB | Express | React | Node.js | JWT Auth | AWS | Heroku | draw.io | Javascript |  HTML | CSS | <s>Punching Bag</s>
+React | Express | MongoDB | Node.js | JWT Auth | AWS | Heroku | draw.io | Javascript | HTML | CSS | <s>Punching Bag</s>
 
 ## Getting Started
 
 <details>
-<summary>How to Use</summary>
+<summary>How to Create a Post</summary>
  
-1. Click on "Todos" in the nav bar. 
+1. Type in your answers to each of the 3 randomly-generated mini-survey questions. 
  
-2. Click on "Create a Todo" in the nav bar.
+2. Click on "Add Survey" to post your responses so others may see them.
  
-3. Write a name and description for your assignment.
+3. Click on the "X" in the bottom-right corner to delete a post. 
+</details>
+
+<details>
+<summary>How to Interact With Others' Posts</summary>
  
-4. Assign a due date and time using the pop-up selectors.
+1.  Posts may be "liked" or "disliked" by clicking on the thumbs up or down button on a post.
  
-5. Hit Submit, and go finish your assignment before it's due! 
+2. To reveal the author of a post, hover over the "Who could it possibly be?" button.
+ 
+3. To see more posts by the same user, click on the revealed username and profile picture.
+
  
 </details>
 
@@ -44,10 +71,6 @@ MongoDB | Express | React | Node.js | JWT Auth | AWS | Heroku | draw.io | Javasc
 <a href="https://trello.com/b/x4ViComX/meet-your-classmates-project-4">https://trello.com/b/x4ViComX/meet-your-classmates-project-4</a>
 </details>
 
-<details>
-<summary>Pitch-Deck</summary>
-<a href="https://docs.google.com/presentation/d/1h2wwLEPFEW8QYUVp-uX2hn5afxvE5GVZatkmLsMW-J4/edit?usp=sharing">https://docs.google.com/presentation/d/1h2wwLEPFEW8QYUVp-uX2hn5afxvE5GVZatkmLsMW-J4/edit?usp=sharing></a>
-</details>
 
 <details>
 <summary>Deployed Link (Heroku)</summary>
@@ -62,21 +85,6 @@ MongoDB | Express | React | Node.js | JWT Auth | AWS | Heroku | draw.io | Javasc
 + Add sync functionality with Outcomes Google Classroom assignments
 + Add sync functionality with Google Calendar
 
-## Contributions
-<details>
-<summary>Navid Yazdani</summary>
-<h4> Back-End Lead, Head Programmer, Coding Logic, Database Manager </h4>
-</details>
-
-<details>
-<summary>Miguel Angel Urena </summary>
-<h4> Front-End Lead, Design, Styling, Vision, Layout, Wireframes, ERD Diagram </h4>
-</details>
-
-<details>
-<summary>Amar 'Pan' Panjwani</summary>
-<h4> Team Lead, GitHub Workflow Manager, Scrum Master, Organization / Planning, Documentation, AWS Image Hosting, Deployment, Pitch-Deck, User Stories </h4>
-</details>
 
 
 
