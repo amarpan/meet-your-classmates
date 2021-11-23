@@ -10,9 +10,8 @@ export function create(post){
 			'Content-Type': 'application/json',
 
 		},
-		body: JSON.stringify(post), // <- this has an image so its formData, no need to jsonify
+		body: JSON.stringify(post), 
 	}).then(res => {
-		// Valid login if we have a status of 2xx (res.ok)
 		if (res.ok) return res.json();
 		throw new Error('Bad Credentials');
 	  })
@@ -26,7 +25,6 @@ export function getAll() {
 	  }
 	})
 	.then(res => {
-		// Valid login if we have a status of 2xx (res.ok)
 		if (res.ok) return res.json();
 		throw new Error(res.message);
 	  })
@@ -39,7 +37,6 @@ export function getAll() {
 		'Authorization': 'Bearer ' + tokenService.getToken()
 	  }
 	}).then(res => {
-		// Valid login if we have a status of 2xx (res.ok)
 		if (res.ok) return res.json();
 		throw new Error('bad Credentials');
 	  })

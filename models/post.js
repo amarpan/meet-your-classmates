@@ -20,9 +20,8 @@ const postSchema = new mongoose.Schema({
     a2: String,
     q3: String,
     a3: String,
-    // photoUrl: String,
-    likes: [likesSchema], // < one post has many likes
-    dislikes: [dislikesSchema] // < one post has many likes
+    likes: [likesSchema], 
+    dislikes: [dislikesSchema] 
   }, {
     timestamps: true
   });

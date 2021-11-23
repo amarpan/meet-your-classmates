@@ -17,11 +17,9 @@ export default function ProfilePage(props) {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
 
-  // This variable name is coming from the route definition in app.js
   const { username } = useParams();
 
   useEffect(() => {
-    // async and await on this anoymous function ^
 
     getProfile();
   }, [username]);
@@ -92,9 +90,6 @@ export default function ProfilePage(props) {
     }
   }
 
-  // Always check the error before loading, because if there is an error
-  // we know something went wrong with the fetch call, therefore the http request
-  // is complete
   if (error) {
     return <ErrorMessage error={error} />;
   }

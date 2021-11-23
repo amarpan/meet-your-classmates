@@ -48,14 +48,10 @@ let questions = [
   "Programming by yourself or working in a group?",
   "Will you ever be the same after GA?",
   "If you could add a custom emoji/gif to Slack, what would it be?",
-  "Favorite time of the day/night to code?"
-
-
-
+  "Favorite time of the day/night to code?",
 ];
 
 let colors = [
-  // 9 colors total
   "red",
   "orange",
   "yellow",
@@ -108,7 +104,7 @@ export default function AddSurveyForm(props) {
     formData.append("a2", state.a2);
     formData.append("q3", state.q3);
     formData.append("a3", state.a3);
-    props.handleAddPost(state); // calling our function!
+    props.handleAddPost(state);
 
     rand1 = questions[getRand(0, 36)];
     rand2 = questions[getRand(0, 36)];
@@ -122,102 +118,75 @@ export default function AddSurveyForm(props) {
       q3: rand3,
       a3: "",
     });
-
-    // Have to submit the form now! We need a function!
   }
 
   return (
     <Grid inverted color="white" textAlign="center" verticalAlign="middle">
-      <Grid.Column style={{ maxWidth: 400, fontFamily:"Josefin Sans" }}>
-        {/* <Segment inverted color="gray" tertiary> */}
-          <Form size="mini" autoComplete="off" onSubmit={handleSubmit} style={{ color:"white" }} >
-            {/* <Form.Input
-              className="form-control"
-              name="q1"
-              value={state.q1}
-              onChange={handleChange}
-              label="Question #1"
-              placeholder="Sample question 1?"
-              readOnly
-            /> */}
-            //const sizes = ['mini', 'tiny', 'small', 'large', 'big', 'huge', 'massive']
-
-            <Form.Input
+      <Grid.Column style={{ maxWidth: 400, fontFamily: "Josefin Sans" }}>
+        <Form
+          size="mini"
+          autoComplete="off"
+          onSubmit={handleSubmit}
+          style={{ color: "white" }}
+        >
+          <Form.Input
             color="white"
-              icon="write"
-              size="big"
-              className="form-control"
-              name="a1"
-              label={rand1}
-              value={state.a1}
-              placeholder="Answer to Question #1"
-              onChange={handleChange}
-              required
-            />
-            {/* <Form.Input
-              className="form-control"
-              name="q2"
-              value={state.q2}
-              onChange={handleChange}
-              label="Question #2"
-              placeholder="Sample question 2?"
-              readOnly
-            /> */}
-            <Form.Input
-              icon="write"
-              size="big"
-              className="form-control"
-              name="a2"
-              label={rand2}
-              value={state.a2}
-              placeholder="Answer to Question #2"
-              onChange={handleChange}
-              required
-            />
-            {/* <Form.Input
-              className="form-control"
-              name="q3"
-              value={state.q3}
-              onChange={handleChange}
-              label="Question #3"
-              placeholder="Sample question 3?"
-              readOnly
-            /> */}
-            <Form.Input
-              icon="write"
-              size="big"
-              className="form-control"
-              name="a3"
-              label={rand3}
-              value={state.a3}
-              placeholder="Answer to Question #3"
-              onChange={handleChange}
-              required
-            />
+            icon="write"
+            size="big"
+            className="form-control"
+            name="a1"
+            label={rand1}
+            value={state.a1}
+            placeholder="Answer to Question #1"
+            onChange={handleChange}
+            required
+          />
+          <Form.Input
+            icon="write"
+            size="big"
+            className="form-control"
+            name="a2"
+            label={rand2}
+            value={state.a2}
+            placeholder="Answer to Question #2"
+            onChange={handleChange}
+            required
+          />
 
-            {/* <Form.Input // take this whole thing out if possible
-              size="mini"
-              className="form-control"
-              type="file"
-              name="photo"
-              label="Upload a pic of something meaningful in your life, or a gif of how you're feeling right now"
-              placeholder="Upload a picture of one of your favorite things in your survey"
-              onChange={handleFileInput}
-              required
-            /> */}
-            <Button animated='vertical' color="green" type="submit" className="btn">
-              <Button.Content visible>Add Survey</Button.Content>
-              <Button.Content hidden>
-                {/* <Icon name="arrow right" />
-                Submit */}
-                <img src="https://emojis.slackmojis.com/emojis/images/1613367715/12976/fox_jump.gif?1613367715" width="15" height="15" />
-                Submit
-                <img src="https://emojis.slackmojis.com/emojis/images/1619571094/33817/jumping_fox.gif?1619571094" width="15" height="15" />
+          <Form.Input
+            icon="write"
+            size="big"
+            className="form-control"
+            name="a3"
+            label={rand3}
+            value={state.a3}
+            placeholder="Answer to Question #3"
+            onChange={handleChange}
+            required
+          />
 
-              </Button.Content>
-            </Button>
-          </Form>
-        {/* </Segment> */}
+          <Button
+            animated="vertical"
+            color="green"
+            type="submit"
+            className="btn"
+          >
+            <Button.Content visible>Add Survey</Button.Content>
+            <Button.Content hidden>
+              <img
+                src="https://emojis.slackmojis.com/emojis/images/1613367715/12976/fox_jump.gif?1613367715"
+                width="15"
+                height="15"
+              />
+              Submit
+              <img
+                src="https://emojis.slackmojis.com/emojis/images/1619571094/33817/jumping_fox.gif?1619571094"
+                width="15"
+                height="15"
+              />
+            </Button.Content>
+          </Button>
+        </Form>
       </Grid.Column>
     </Grid>
   );

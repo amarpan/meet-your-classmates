@@ -6,24 +6,17 @@ function signup(user) {
   return (
     fetch(BASE_URL + "signup", {
       method: "POST",
-      // headers: new Headers({'Content-Type': 'multipart/formData'}), < --- Browser sets this automatically
-      // headers: new Headers({'Content-Type': 'application/json'}),  // If you are sending a file/photo over
-      // Can remove the headers, and I browser will automatically apply the multipart/formData header for us
-      body: user, // < user should be formData, signup page, userService.signup(formData)
+      body: user, 
     })
       .then((res) => {
         if (res.ok) return res.json();
-        // Probably a duplicate email
         console.log(
           "if you have an error, you must check your server terminal!"
         );
         throw new Error("Email already taken!");
       })
-      // Parameter destructuring!
       .then(({ token }) => tokenService.setToken(token))
   );
-  // The above could have been written as
-  //.then((token) => token.token);
 }
 function getUser() { //
   return tokenService.getUserFromToken();
@@ -40,7 +33,6 @@ function login(creds) { //
     body: JSON.stringify(creds)
   })
   .then(res => {
-    // Valid login if we have a status of 2xx (res.ok)
     if (res.ok) return res.json();
     throw new Error('Bad Credentials!');
   })
@@ -59,7 +51,7 @@ function getProfile(username){
   })
 }
 
-export default { //
+export default { 
   signup, 
   getUser,
   logout,

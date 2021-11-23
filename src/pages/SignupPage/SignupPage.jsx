@@ -14,7 +14,6 @@ import userService from "../../utils/userService";
 import { useNavigate, Link } from "react-router-dom";
 
 let colors = [
-  // 9 colors total
   "red",
   "orange",
   "yellow",
@@ -31,7 +30,7 @@ function getRand(min, max) {
 }
 
 export default function SignUpPage(props) {
-  const navigate = useNavigate(); // <- programtically navigate to a different route
+  const navigate = useNavigate();
 
   const [error, setError] = useState("");
   const [state, setState] = useState({
@@ -60,28 +59,19 @@ export default function SignUpPage(props) {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    // Forms with Files only we have to do, everything else can be json
-    //Take our state
-    // create a formData object, for our fetch request
     const formData = new FormData();
-    // adding our photo to the FormData, its key will be called photo
     formData.append("photo", selectedFile);
 
-    // now we must do the same thing with the rest of our state
     for (let key in state) {
       formData.append(key, state[key]);
     }
-    // if you log out formData, you won't see anything
-    // console.log(formData, " < -This will show nothing")
-    // You can look inside by doing this
     console.log(formData.forEach((item) => console.log(item)));
 
     try {
-      // For requests that are sending over a photo, we must send formData
-      await userService.signup(formData); // after we get a response from the server
+      await userService.signup(formData);
 
-      props.handleSignUpOrLogin(); // decodes our token in localstorage, and sets the users information in our App.js state
-      navigate("/"); // navigates to the home page route
+      props.handleSignUpOrLogin();
+      navigate("/");
     } catch (err) {
       setError(err.message);
     }
@@ -234,7 +224,11 @@ export default function SignUpPage(props) {
               <Button.Content visible>Sign-Up</Button.Content>
               <Button.Content hidden>
                 Let's go!
-                <img src="https://emojis.slackmojis.com/emojis/images/1618879340/31931/floating-rock_jump.gif?1618879340" width="15" height="15" />
+                <img
+                  src="https://emojis.slackmojis.com/emojis/images/1618879340/31931/floating-rock_jump.gif?1618879340"
+                  width="15"
+                  height="15"
+                />
               </Button.Content>
             </Button>
           </Segment>

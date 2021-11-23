@@ -14,7 +14,7 @@ import {
   Icon,
 } from "semantic-ui-react";
 
-let colors = [ // 9 colors total
+let colors = [
   "red",
   "orange",
   "yellow",
@@ -23,8 +23,8 @@ let colors = [ // 9 colors total
   "teal",
   "blue",
   "violet",
-  "purple"
-]
+  "purple",
+];
 
 function getRand(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -51,30 +51,37 @@ export default function LoginPage(props) {
 
     try {
       await userService.login(state);
-      // Route to wherever you want!
       props.handleSignUpOrLogin();
       navigate("/");
     } catch (err) {
-      // Invalid user data (probably duplicate email)
       setError(err.message);
     }
   }
 
   return (
     <>
-      <Grid 
+      <Grid
         textAlign="center"
-        style={{ height: "100vh", background: "linear-gradient(#e66465, #9198e5)", fontFamily: "Josefin Sans" }}
+        style={{
+          height: "100vh",
+          background: "linear-gradient(#e66465, #9198e5)",
+          fontFamily: "Josefin Sans",
+        }}
         verticalAlign="middle"
       >
         <Grid.Column style={{ maxWidth: 450 }}>
-          <Header  as="h3" color="black" textAlign="center" style={{}}>
+          <Header as="h3" color="black" textAlign="center" style={{}}>
             <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
             Log-in to Meet Your Classmates
             <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
           </Header>
-          <Form  onSubmit={handleSubmit}>
-            <Segment style={{background: "linear-gradient(#e66465, #9198e5)"}} color="blue" stacked tertiary>
+          <Form onSubmit={handleSubmit}>
+            <Segment
+              style={{ background: "linear-gradient(#e66465, #9198e5)" }}
+              color="blue"
+              stacked
+              tertiary
+            >
               <Form.Input
                 type="email"
                 name="email"
@@ -104,13 +111,29 @@ export default function LoginPage(props) {
                 <Button.Content visible>Login</Button.Content>
                 <Button.Content hidden>
                   Let's go!
-                <img src="https://emojis.slackmojis.com/emojis/images/1619738173/34112/fire_jump.gif?1619738173" width="15" height="15" />
+                  <img
+                    src="https://emojis.slackmojis.com/emojis/images/1619738173/34112/fire_jump.gif?1619738173"
+                    width="15"
+                    height="15"
+                  />
                 </Button.Content>
               </Button>
             </Segment>
           </Form>
-          <Message style={{background: "linear-gradient(#e66465, #9198e5)", color:"white", fontFamily: "Josefin Sans"}}>
-            New to us? <Link style={{color:"black", textDecoration:"underline"}} to="/signup">Sign Up</Link>
+          <Message
+            style={{
+              background: "linear-gradient(#e66465, #9198e5)",
+              color: "white",
+              fontFamily: "Josefin Sans",
+            }}
+          >
+            New to us?{" "}
+            <Link
+              style={{ color: "black", textDecoration: "underline" }}
+              to="/signup"
+            >
+              Sign Up
+            </Link>
           </Message>
           {error ? <ErrorMessage error={error} /> : null}
         </Grid.Column>
