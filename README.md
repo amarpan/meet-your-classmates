@@ -1,18 +1,15 @@
-:bowtie:
-# <h1 align="center">:school: MEET YOUR CLASSMATES :school: </h1>
+# <h1 align="center">:school_satchel: :school: MEET YOUR CLASSMATES :school: :school_satchel: </h1>
  #### <h3 align="center">https://meetyourclassmates.herokuapp.com/</h3>
- <h5 align="center">Amar Panjwani</h5>
-
+ <h5 align="center">Amar 'Pan' Panjwani</h5>
 
 
 
 ## Description
-Tracker is a hub where GA software engineering students can track their current homework assignments and corresponding due dates using todo lists and notes.
-
+Meet Your Classmates is a hub where students can get to know and relate to their peers via completion of short 3-question surveys. By learning about others' backgrounds, previous experiences, and interests, an atmosphere of community is created that is most conducive to learning. 
 ## Screenshots
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">ERD</h3> | <img src="main_app/static/images/ERD.jpg" width="600">
+| <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.cropped.jpg" width="600">
 | <h3 align="center">Wireframes</h3> | <img src="main_app/static/images/wireframes/all_wireframes.jpg" width="600">
 | <h3 align="center">Home Page</h3> | <img src="main_app/static/images/screenshots/home_screenshot.jpg" width="600">
 | <h3 align="center">Todos List</h3> | <img src="main_app/static/images/screenshots/todos_list_screenshot.jpg" width="600">
@@ -20,7 +17,7 @@ Tracker is a hub where GA software engineering students can track their current 
 | <h3 align="center">Add a Note</h3> | <img src="main_app/static/images/screenshots/note_add_screenshot.jpg" width="600">
 
 ## Technologies Used
-Python | Django | PostgreSQL | AWS | Heroku | Adobe XD | HTML | CSS | <s>Lots of Advil</s>
+MongoDB | Express | React | Node.js | JWT Auth | AWS | Heroku | draw.io | Javascript |  HTML | CSS | <s>Punching Bag</s>
 
 ## Getting Started
 
@@ -43,7 +40,7 @@ Python | Django | PostgreSQL | AWS | Heroku | Adobe XD | HTML | CSS | <s>Lots of
 ## Resources
 <details>
 <summary>Trello Board</summary>
-<a href="https://trello.com/b/PUkOSwTq/tracker-project-3">https://trello.com/b/PUkOSwTq/tracker-project-3</a>
+<a href="https://trello.com/b/x4ViComX/meet-your-classmates-project-4">https://trello.com/b/x4ViComX/meet-your-classmates-project-4</a>
 </details>
 
 <details>
