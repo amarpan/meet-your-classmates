@@ -32,8 +32,8 @@ Meet Your Classmates is a hub where students can get to know and relate to their
  
  | Description | Screenshot |
  |------------ | ------------|
- | <h3 align="center">Feed Page</h3> | <img src="public/Screenshots/" width="600">
- | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/" width="600">
+ | <h3 align="center">Feed Page</h3> | <img src="public/Screenshots/FeedPage.png" width="600">
+ | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/ProfilePage.png" width="600">
  
 </details>
 
@@ -89,7 +89,7 @@ React | Semantic UI | JSX | Express | MongoDB | Node.js | JWT Auth | AWS | Herok
 + <p style={{color:"red"}}>Add a super dislike button</p>
 + <s>Integrate Tinder API</s>
 + <s>Don't rip off pupstagram</s>
-+ [x] Graduate GA
++ [x] Survive GA using Linux
 
 
 

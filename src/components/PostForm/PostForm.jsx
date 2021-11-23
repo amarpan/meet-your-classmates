@@ -128,9 +128,9 @@ export default function AddSurveyForm(props) {
 
   return (
     <Grid inverted color="white" textAlign="center" verticalAlign="middle">
-      <Grid.Column style={{ maxWidth: 400, fontFamily:"Josefin Sans", fontSize:"28px" }}>
+      <Grid.Column style={{ maxWidth: 400, fontFamily:"Josefin Sans" }}>
         {/* <Segment inverted color="gray" tertiary> */}
-          <Form size="mini" autoComplete="off" onSubmit={handleSubmit} style={{ height: "33vh", color:"white" }} >
+          <Form size="mini" autoComplete="off" onSubmit={handleSubmit} style={{ color:"white" }} >
             {/* <Form.Input
               className="form-control"
               name="q1"
@@ -140,10 +140,12 @@ export default function AddSurveyForm(props) {
               placeholder="Sample question 1?"
               readOnly
             /> */}
+            //const sizes = ['mini', 'tiny', 'small', 'large', 'big', 'huge', 'massive']
+
             <Form.Input
             color="white"
               icon="write"
-              size="small"
+              size="big"
               className="form-control"
               name="a1"
               label={rand1}
@@ -163,7 +165,7 @@ export default function AddSurveyForm(props) {
             /> */}
             <Form.Input
               icon="write"
-              size="small"
+              size="big"
               className="form-control"
               name="a2"
               label={rand2}
@@ -183,7 +185,7 @@ export default function AddSurveyForm(props) {
             /> */}
             <Form.Input
               icon="write"
-              size="small"
+              size="big"
               className="form-control"
               name="a3"
               label={rand3}
