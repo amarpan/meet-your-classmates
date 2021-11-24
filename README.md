@@ -87,7 +87,6 @@ React | Semantic UI | JSX | Express | MongoDB | Mongoose | Node.js | JWT Auth | 
 ## Next Steps
 + Add comment functionality on posts to harass others
 + Add a super dislike button
-+ ~~Don't rip off pupstagram~~
 + [x] Survive GA using Linux
 
 
