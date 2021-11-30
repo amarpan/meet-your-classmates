@@ -63,7 +63,7 @@ Meet Your Classmates is a hub where students can get to know and relate to their
 </details>
  
 ## Technologies Used
-React | Semantic UI | JSX | Express | MongoDB | Mongoose | Node.js | JWT Auth | AWS | Heroku | draw.io | Javascript | HTML | CSS | <s>Punching Bag</s>
+React | Semantic UI | JSX | Express | MongoDB | Mongoose | Node.js | JWT Auth | AWS | Heroku | draw.io | Lucidchart | Javascript | HTML | CSS | ~~Punching Bag~~
 
 
 
@@ -87,8 +87,6 @@ React | Semantic UI | JSX | Express | MongoDB | Mongoose | Node.js | JWT Auth | 
 ## Next Steps
 + Add comment functionality on posts to harass others
 + Add a super dislike button
-+ <s>Integrate Tinder API</s>
-+ <s>Don't rip off pupstagram</s>
 + [x] Survive GA using Linux
 
 
