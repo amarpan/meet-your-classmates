@@ -40,7 +40,7 @@ let questions = [
   "What programming principles are you still iffy about / need more practice with?",
   "MongoDB or PostgreSQL?",
   "Why do you think it's called 'General Assembly?'",
-  "Flexbox or CSS Grid",
+  "Flexbox or CSS Grid?",
   "Regular functions or arrow functions?",
   "Google oAuth, Token-based, or Django built-in authorization?",
   "How many times have you had to attend office hours?",

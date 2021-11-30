@@ -45,7 +45,8 @@ export default function PageHeader({ user, handleLogout }) {
         </Menu.Menu>
       </Menu>
       <Header as="h1" textAlign="center" color="red">
-        <Image src="https://i.ibb.co/vD8wqgj/bookout.png" />
+        <img src="/images/openbookstraight.png" />
+
         <Link
           style={{
             textDecoration: "none",
@@ -56,7 +57,7 @@ export default function PageHeader({ user, handleLogout }) {
         >
           Meet Your Classmates
         </Link>
-        <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />
+        <img src="/images/openbookflip.png" />
       </Header>
     </Segment>
   );

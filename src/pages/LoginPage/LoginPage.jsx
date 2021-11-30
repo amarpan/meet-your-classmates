@@ -71,9 +71,9 @@ export default function LoginPage(props) {
       >
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header as="h3" color="black" textAlign="center" style={{}}>
-            <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
+            <img src="/images/openbookstraight.png" />
             Log-in to Meet Your Classmates
-            <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
+            <img src="/images/openbookflip.png" />
           </Header>
           <Form onSubmit={handleSubmit}>
             <Segment

@@ -98,9 +98,9 @@ export default function SignUpPage(props) {
           color="black"
           textAlign="center"
         >
-          <Image src="https://www.writeabout.com/wp-content/themes/artikulo/images/students-share-students-icon.png" />{" "}
+          <img src="/images/openbookstraight.png" />
           Sign Up for Meet Your Classmates
-          <Image src="https://i.ibb.co/K6JNMwG/bookoutflip.png" />{" "}
+          <img src="/images/openbookflip.png" />
         </Header>
         <Form
           autoComplete="off"
