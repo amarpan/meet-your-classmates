@@ -75,7 +75,7 @@ React | Semantic UI | JSX | Express | MongoDB | Mongoose | Node.js | JWT Auth | 
 </details>
 
 
-<details>
+<details open>
 <summary>Deployed Link (Heroku)</summary>
 <a href="https://meetyourclassmates.herokuapp.com/">https://meetyourclassmates.herokuapp.com/</a>
 </details>
