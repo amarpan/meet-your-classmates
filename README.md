@@ -85,10 +85,8 @@ React | Semantic UI | JSX | Express | MongoDB | Mongoose | Node.js | JWT Auth | 
 #### [Heroku Deployment](https://gatracker.herokuapp.com/) -->
 
 ## Next Steps
-+ Add comment functionality on posts to harass others
-+ Add a super dislike button
-+ [x] Survive GA using Linux
-
++ Add comment functionality on posts to encourage discussion
++ Add edit and update functionality for a user's profile
 
 
 
