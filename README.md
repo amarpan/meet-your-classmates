@@ -63,10 +63,10 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
  
 ## 💻 Technologies Used
  
-![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
+![MongoDB Atlas](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
 ![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
 ![React](https://img.shields.io/badge/-React-333?style=flat&logo=react) 
-![Node](https://img.shields.io/badge/-Node-333?style=flat&logo=node.js)
+![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
 ![SemanticUIReact](https://img.shields.io/badge/-Semantic%20UI%20React-333?style=flat&logo=semanticuireact)
 ![AWS S3](https://img.shields.io/badge/-AWS_S3-333?style=flat&logo=amazons3)
 ![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-333?style=flat&logo=jsonwebtokens)
