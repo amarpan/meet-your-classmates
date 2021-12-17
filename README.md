@@ -38,8 +38,29 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 </details>
 
 
-## Getting Started
 
+ 
+</details>
+ 
+## Technologies Used
+ 
+![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
+![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
+![React](https://img.shields.io/badge/-React-333?style=flat&logo=react) 
+![Node](https://img.shields.io/badge/-Node-333?style=flat&logo=node.js)
+![SemanticUIReact](https://img.shields.io/badge/-Semantic%20UI%20React-333?style=flat&logo=semanticuireact)
+![AWS S3](https://img.shields.io/badge/-AWS_S3-333?style=flat&logo=amazons3)
+![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-333?style=flat&logo=jsonwebtokens)
+![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-333?style=flat&logo=mongodb)
+![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
+![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello) 
+![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
+![Canva](https://img.shields.io/badge/-Canva-333?style=flat&logo=canva)
+
+## Getting Started
+### Instructions
 <details>
 <summary>How to Create a Post</summary>
  
@@ -59,16 +80,10 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
  
 3. To see more posts by the same user, click on the revealed username and profile picture.
 
- 
 </details>
- 
-## Technologies Used
-React | Semantic UI | JSX | Express | MongoDB | Mongoose ODM | Node.js | JWT Auth | AWS S3 | Heroku | draw.io | Lucidchart | Javascript | HTML | CSS | ~~Punching Bag~~
 
+### Links
 
-
-
-## Resources
 <details>
 <summary>Trello Board</summary>
 <a href="https://trello.com/b/x4ViComX/meet-your-classmates-project-4">https://trello.com/b/x4ViComX/meet-your-classmates-project-4</a>
@@ -85,8 +100,8 @@ React | Semantic UI | JSX | Express | MongoDB | Mongoose ODM | Node.js | JWT Aut
 #### [Heroku Deployment](https://gatracker.herokuapp.com/) -->
 
 ## Next Steps
-+ Add comment functionality on posts to encourage discussion
-+ Add edit and update functionality for a user's profile
+- [ ] Add comment functionality on posts to encourage discussion
+- [ ] Add edit and update functionality for a user's profile
 
 
 
