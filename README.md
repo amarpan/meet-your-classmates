@@ -2,13 +2,13 @@
  #### <h3 align="center">https://meetyourclassmates.herokuapp.com/</h3>
  <h5 align="center">Amar 'Pan' Panjwani</h5>
 
-## Description
+## 📝Description
 Meet Your Classmates is an Instagram-clone and hub where students can get to know and relate to their peers via completion of short 3-question mini-surveys. By learning about others' backgrounds, previous experiences, and interests, an atmosphere of community is created that is conducive to higher levels of learning and success. 
 
-## Screenshots
+## 🖼️ Screenshots
 
 <details>
- <summary>ERD</summary>
+ <summary> 📊 ERD</summary>
  
  | Description | Screenshot |
  |------------ | ------------|
@@ -17,7 +17,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 </details>
 
 <details>
- <summary>Wireframes</summary>
+ <summary> 🎨 Wireframes</summary>
  
  | Description | Screenshot |
  |------------ | ------------|
@@ -28,7 +28,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 </details>
 
 <details>
- <summary>Functionality</summary>
+ <summary> ⚙️ Functionality</summary>
  
  | Description | Screenshot |
  |------------ | ------------|
@@ -42,7 +42,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
  
 </details>
  
-## Technologies Used
+## 💻 Technologies Used
  
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
 ![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
@@ -59,8 +59,8 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 ![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
 ![Canva](https://img.shields.io/badge/-Canva-333?style=flat&logo=canva)
 
-## Getting Started
-### Instructions
+## ⚛️ Getting Started
+### 📲 Instructions
 <details>
 <summary>How to Create a Post</summary>
  
@@ -82,7 +82,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 
 </details>
 
-### Links
+### 🔗 Lnks
 
 <details>
 <summary>Trello Board</summary>
@@ -99,7 +99,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 
 #### [Heroku Deployment](https://gatracker.herokuapp.com/) -->
 
-## Next Steps
+## ⏭️ Next Steps
 - [ ] Add comment functionality on posts to encourage discussion
 - [ ] Add edit and update functionality for a user's profile
 
