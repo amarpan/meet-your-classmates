@@ -1,6 +1,25 @@
 # <h1 align="center">:school_satchel: :school: MEET YOUR CLASSMATES :school: :school_satchel: </h1>
  #### <h3 align="center">https://meetyourclassmates.herokuapp.com/</h3>
- <h5 align="center">Amar 'Pan' Panjwani</h5>
+ 
+ <h5 align="center">Amar 'Pan' Panjwani</h5>      
+ 
+ <div align="center">
+ <a href="https://amarpan.github.io" target="_blank">
+    <img src="https://img.shields.io/badge/-Portfolio:_amarpan.github.io-darkgreen?style=flat&logo=medium"
+ </a>
+    
+ <a href="https://www.linkedin.com/in/amarpan/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/amarpan-blue?style=flat&logo=Linkedin&logoColor=white">
+ </a> 
+    
+ <a href="mailto:amar.panjwani@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/-amar.panjwani@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
+ </a>
+    
+ <a href="https://medium.com/@amarpan">
+    <img src="https://img.shields.io/badge/-medium.com/@amarpan-black?style=flat&logo=medium">
+ </a>
+ </div>
 
 ## 📝Description
 Meet Your Classmates is an Instagram-clone and hub where students can get to know and relate to their peers via completion of short 3-question mini-surveys. By learning about others' backgrounds, previous experiences, and interests, an atmosphere of community is created that is conducive to higher levels of learning and success. 
