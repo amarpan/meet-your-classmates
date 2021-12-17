@@ -26,7 +26,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 
 ## 🖼️ Screenshots
 
-<details open>
+<details>
  <summary> 📊 ERD</summary>
  
  | Description | Screenshot |
@@ -35,7 +35,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
  
 </details>
 
-<details open>
+<details>
  <summary> 🎨 Wireframes</summary>
  
  | Description | Screenshot |
