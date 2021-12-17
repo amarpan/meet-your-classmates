@@ -26,33 +26,33 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 
 ## 🖼️ Screenshots
 
-<details>
+<details open>
  <summary> 📊 ERD</summary>
  
  | Description | Screenshot |
  |------------ | ------------|
- | <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.png" width="600">
+ | <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.png" width="700">
  
 </details>
 
-<details>
+<details open>
  <summary> 🎨 Wireframes</summary>
  
  | Description | Screenshot |
  |------------ | ------------|
- | <h3 align="center">Home Page</h3> | <img src="public/Screenshots/Homepage.Wireframe.MYC.png" width="600">
- | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/ProfilePage.Wireframe.MYC.png" width="600">
+ | <h3 align="center">Home Page</h3> | <img src="public/Screenshots/Homepage.Wireframe.MYC.png" width="700">
+ | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/ProfilePage.Wireframe.MYC.png" width="700">
  
  
 </details>
 
-<details>
+<details open>
  <summary> ⚙️ Functionality</summary>
  
  | Description | Screenshot |
  |------------ | ------------|
- | <h3 align="center">Feed Page</h3> | <img src="public/Screenshots/FeedPage.png" width="600">
- | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/ProfilePage.png" width="600">
+ | <h3 align="center">Feed Page</h3> | <img src="public/Screenshots/FeedPage.png" width="700">
+ | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/ProfilePage.png" width="700">
  
 </details>
 
