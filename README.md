@@ -82,7 +82,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 
 </details>
 
-### 🔗 Lnks
+### 🔗 Links
 
 <details>
 <summary>Trello Board</summary>
