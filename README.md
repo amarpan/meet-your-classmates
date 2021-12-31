@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/-pan.amruth@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
  </a>
     
- <a href="https://medium.com/@amarpan">
+ <a href="https://medium.com/@panamruth">
     <img src="https://img.shields.io/badge/-medium.com/@amarpan-black?style=flat&logo=medium">
  </a>
  </div>
