@@ -12,7 +12,7 @@
       <img src="https://img.shields.io/badge/-linkedin.com/in/panamruth-blue?style=flat&logo=Linkedin&logoColor=white">
  </a> 
     
- <a href="mailto:amar.panjwani@gmail.com" target="_blank">
+ <a href="mailto:pan.amruth@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-amar.panjwani@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
  </a>
     
