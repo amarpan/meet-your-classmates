@@ -17,7 +17,7 @@
  </a>
     
  <a href="https://medium.com/@panamruth">
-    <img src="https://img.shields.io/badge/-medium.com/@amarpan-black?style=flat&logo=medium">
+    <img src="https://img.shields.io/badge/-medium.com/@panamruth-black?style=flat&logo=medium">
  </a>
  </div>
 
