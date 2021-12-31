@@ -8,8 +8,8 @@
     <img src="https://img.shields.io/badge/-panamruth.github.io/portfolio-darkgreen?style=flat&logo=medium"
  </a>
     
- <a href="https://www.linkedin.com/in/amarpan/" target="_blank">
-      <img src="https://img.shields.io/badge/-linkedin.com/in/amarpan-blue?style=flat&logo=Linkedin&logoColor=white">
+ <a href="https://www.linkedin.com/in/panamruth/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/panamruth-blue?style=flat&logo=Linkedin&logoColor=white">
  </a> 
     
  <a href="mailto:amar.panjwani@gmail.com" target="_blank">
