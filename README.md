@@ -4,7 +4,7 @@
  <h5 align="center">Amar 'Pan' Panjwani</h5>      
  
  <div align="center">
- <a href="https://amarpan.github.io" target="_blank">
+ <a href="https://panamruth.github.io/portfolio" target="_blank">
     <img src="https://img.shields.io/badge/-Portfolio:_amarpan.github.io-darkgreen?style=flat&logo=medium"
  </a>
     
@@ -119,6 +119,8 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 #### [Heroku Deployment](https://gatracker.herokuapp.com/) -->
 
 ## ⏭️ Next Steps
+### Upcoming Features
+- [X] Add gifs to animated sliding buttons
 - [ ] Add comment functionality on posts to encourage discussion
 - [ ] Add edit and update functionality for a user's profile
 
