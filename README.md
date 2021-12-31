@@ -24,7 +24,7 @@
 ## 📝 Description
 Meet Your Classmates is an Instagram-clone and hub where students can get to know and relate to their peers via completion of short 3-question mini-surveys. By learning about others' backgrounds, previous experiences, and interests, an atmosphere of community is created that is conducive to higher levels of learning and success. 
 
-## 🖼️ Screenshots
+## :camera: Screenshots
 
 <details>
  <summary> 📊 ERD</summary>
