@@ -5,7 +5,7 @@
  
  <div align="center">
  <a href="https://panamruth.github.io/portfolio" target="_blank">
-    <img src="https://img.shields.io/badge/-panamruth.github.io/portfolio-darkgreen?style=flat&logo=github">
+    <img src="https://img.shields.io/badge/-panamruth.github.io/portfolio-gold?style=flat&logo=github">
  </a>
     
  <a href="https://www.linkedin.com/in/panamruth/" target="_blank">
