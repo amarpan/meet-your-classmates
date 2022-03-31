@@ -1,5 +1,9 @@
 # <h1 align="center">:school_satchel: MEET YOUR CLASSMATES :school_satchel: </h1>
  #### <h3 align="center">https://meetyourclassmates.herokuapp.com/</h3>
+ <h6 align="center">
+   <a href="https://www.linkedin.com/in/amarpan/">Amar Panjwani
+      </a><br></a>
+ </h6>
  
        
  
@@ -21,10 +25,7 @@
     <img src="https://img.shields.io/badge/-amarpan.us@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
  </a>
 
- <h6 align="center">
-   <a href="https://www.linkedin.com/in/amarpan/">Amar Panjwani
-      </a><br></a>
- </h6>
+ 
  
     
  </div>
