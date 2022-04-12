@@ -110,7 +110,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 ![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
 ![Canva](https://img.shields.io/badge/-Canva-333?style=flat&logo=canva)
 
-## ⚛️ Getting Started
+## 🔥 Getting Started
 ### 📲 Instructions
 <details>
 <summary>How to Create a Post</summary>
