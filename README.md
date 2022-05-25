@@ -1,56 +1,33 @@
 # <h1 align="center">:school_satchel: MEET YOUR CLASSMATES :school_satchel: </h1>
  #### <h3 align="center">https://meetyourclassmates.herokuapp.com/</h3>
- <h3 align="center">
-   Created by <a href="https://www.linkedin.com/in/amarpan/">Professor Pan, M.Ed.
-      </a><br></a>
+  <h3 align="center" id="author">
+   Created by <a href="https://www.linkedin.com/in/profpan396/">Professor Pan, M.Ed.</a><br> 
+   <div align="center">
+<a href="https://profpan396.github.io/portfolio" target="_blank">
+        <img
+          src="https://img.shields.io/badge/-profpan396.github.io/portfolio-magenta?style=flat&logo=Blackberry&logoColor=black">
+      </a>
+<a href="mailto:profpan396@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/-profpan396@gmail.com-aqua?style=flat&logo=Gmail&logoColor=black">
+ </a>
+ <a href="https://www.github.com/profpan396/" target="_blank">
+        <img
+          src="https://img.shields.io/badge/-github.com/profpan396-junglegreen?style=flat&logo=GitHub&logoColor=black">
+      </a>
+
+ <a href="https://www.linkedin.com/in/profpan396/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/profpan396-blue?style=flat&logo=Linkedin&logoColor=black">
+ </a> 
+  <a href="https://medium.com/@profpan396">
+    <img src="https://img.shields.io/badge/-medium.com/@profpan396-pink?style=flat&logo=medium&logoColor=black">
+ </a>
+ <a href="https://twitter.com/profpan396" target="_blank">
+      <img src="https://img.shields.io/badge/-twitter.com/in/profpan396-skyblue?style=flat&logo=Twitter&logoColor=black">
+ </a>
+
+
  </h3>
  
-       
-<div align="center">
- <a href="https://amarpan.github.io/portfolio" target="_blank">
-    <img src="https://img.shields.io/badge/-amarpan.github.io/portfolio-gold?style=flat&logo=materialdesign&logoColor=white">
- </a>
-
- <a href="https://www.github.com/amarpan/" target="_blank">
-        <img
-          src="https://img.shields.io/badge/-github.com/amarpan-orange?style=flat&logo=GitHub&logoColor=white">
-      </a>
-    
- <a href="https://www.linkedin.com/in/amarpan/" target="_blank">
-      <img src="https://img.shields.io/badge/-linkedin.com/in/amarpan-blue?style=flat&logo=Linkedin&logoColor=white">
- </a> 
-
-  <a href="https://medium.com/@amarpan">
-    <img src="https://img.shields.io/badge/-medium.com/@amarpan-purple?style=flat&logo=medium">
- </a>
-
- <a href="mailto:amarpan.us@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-amarpan.us@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
- </a>
-
- <br>
- 
-
- <a href="https://twitter.com/amarpan396" target="_blank">
-      <img src="https://img.shields.io/badge/-twitter.com/in/amarpan396-skyblue?style=flat&logo=Twitter&logoColor=white">
- </a> 
-
- <a href="https://www.facebook.com/amarpan396/" target="_blank">
-      <img src="https://img.shields.io/badge/-facebook.com/amarpan396-darkblue?style=flat&logo=Facebook&logoColor=white">
- </a> 
-
- <a href="https://www.instagram.com/amarpan396/" target="_blank">
-      <img src="https://img.shields.io/badge/-instagram.com/amarpan.us-hotpink?style=flat&logo=Instagram&logoColor=white">
- </a> 
-    
- 
- 
-    
- </div>
-
- 
- 
-    
  </div>
 
 ## 📝 Description
