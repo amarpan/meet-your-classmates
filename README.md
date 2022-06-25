@@ -3,9 +3,9 @@
   <h3 align="center" id="author">
    Created by <a href="https://www.linkedin.com/in/profpan396/">Professor Pan, M.Ed.</a><br> 
    <div align="center">
-<a href="https://profpan396.github.io/portfolio" target="_blank">
+<a href="https://profpan396.github.io" target="_blank">
         <img
-          src="https://img.shields.io/badge/-profpan396.github.io/portfolio-magenta?style=flat&logo=Blackberry&logoColor=black">
+          src="https://img.shields.io/badge/-profpan396.github.io-magenta?style=flat&logo=Blackberry&logoColor=black">
       </a>
 <a href="mailto:profpan396@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-profpan396@gmail.com-aqua?style=flat&logo=Gmail&logoColor=black">
