@@ -66,20 +66,20 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
  
 ## 💻 Technologies Used
  
-![MongoDB Atlas](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
-![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
-![React](https://img.shields.io/badge/-React-333?style=flat&logo=react) 
-![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
-![SemanticUIReact](https://img.shields.io/badge/-Semantic%20UI-333?style=flat&logo=semanticuireact)
-![AWS S3](https://img.shields.io/badge/-AWS_S3-333?style=flat&logo=amazons3)
-![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-333?style=flat&logo=jsonwebtokens)
-![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-333?style=flat&logo=mongodb)
-![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
-![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
-![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
-![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello) 
-![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
-![Canva](https://img.shields.io/badge/-Canva-333?style=flat&logo=canva)
+![MongoDB Atlas](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)
+![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) 
+![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
+![SemanticUIReact](https://img.shields.io/badge/-Semantic%20UI-05122A?style=flat&logo=semanticuireact)
+![AWS S3](https://img.shields.io/badge/-AWS_S3-05122A?style=flat&logo=amazons3)
+![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-05122A?style=flat&logo=jsonwebtokens)
+![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-05122A?style=flat&logo=mongodb)
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript) 
+![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
+![Trello](https://img.shields.io/badge/-Trello-05122A?style=flat&logo=trello) 
+![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku)
+![Canva](https://img.shields.io/badge/-Canva-05122A?style=flat&logo=canva)
 
 ## 🔥 Getting Started
 ### 📲 Instructions
