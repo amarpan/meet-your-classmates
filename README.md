@@ -1,4 +1,4 @@
-# <h1 align="center">:school_satchel: MEET YOUR CLASSMATES :school_satchel: </h1>
+# <h1 align="center">:school: MEET YOUR CLASSMATES :school: </h1>
  #### <h3 align="center"><a href="https://meetyourclassmates.herokuapp.com/">CLICK TO DEMO</a></h3>
   <h3 align="center" id="author">
    Created by <a href="https://www.linkedin.com/in/profpan396/">Amar Pan, M.Ed.</a><br><br>
@@ -13,13 +13,13 @@
         <img
           src="https://img.shields.io/badge/-@profpan396-junglegreen?style=flat&logo=GitHub&logoColor=black">
       </a>
-
+<a href="https://twitter.com/profpan396" target="_blank">
+  <img src="https://img.shields.io/badge/-@profpan396-skyblue?style=flat&logo=Twitter&logoColor=black">
+</a>
  <a href="https://www.linkedin.com/in/profpan396/" target="_blank">
       <img src="https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black">
  </a> 
-  <a href="https://twitter.com/profpan396" target="_blank">
-  <img src="https://img.shields.io/badge/-@profpan396-skyblue?style=flat&logo=Twitter&logoColor=black">
-</a>
+  
  </h3>
  
  </div>
