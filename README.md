@@ -1,7 +1,7 @@
 # <h1 align="center">:school_satchel: MEET YOUR CLASSMATES :school_satchel: </h1>
  #### <h3 align="center"><a href="https://meetyourclassmates.herokuapp.com/">CLICK TO DEMO</a></h3>
   <h3 align="center" id="author">
-   Created by <a href="https://www.linkedin.com/in/profpan396/">Amar Pan, M.Ed.</a><br> 
+   Created by <a href="https://www.linkedin.com/in/profpan396/">Amar Pan, M.Ed.</a><br><br>
    <div align="center">
 <a href="https://profpan396.github.io" target="_blank">
         <img
