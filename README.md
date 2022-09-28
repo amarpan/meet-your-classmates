@@ -91,7 +91,7 @@ Meet Your Classmates is an Instagram-clone and hub where students can get to kno
 
 ## 🔥 Getting Started
 ### 📲 Instructions
-<details>
+<details open>
 <summary>How to Create a Post</summary>
  
 :one: Type in your answers to each of the 3 randomly-generated mini-survey questions. 
