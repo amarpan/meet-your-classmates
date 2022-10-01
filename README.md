@@ -1,36 +1,27 @@
-<div align="center">
-
-# MEET YOUR CLASSMATES 
-
-
+<div align="center" id="header">
+ 
+# MEET YOUR CLASSMATES
+**Created by [Amar Pan, M.Ed.](https://www.linkedin.com/in/profpan396/)** 
+#### [CLICK TO DEMO](https://meetyourclassmates.herokuapp.com) 
+ 
 </div>
 
- #### <h3 align="center"><a href="https://meetyourclassmates.herokuapp.com/">CLICK TO DEMO</a></h3>
-  <h3 align="center" id="author">
-   Created by <a href="https://www.linkedin.com/in/profpan396/">Amar Pan, M.Ed.</a><br><br>
-   <div align="center">
-<a href="https://profpan396.github.io" target="_blank">
-        <img
-          src="https://img.shields.io/badge/-profpan396.github.io-magenta?style=flat&logo=Blackberry&logoColor=black">
-      </a>
-      <br>
+<div align="center" id="socialbuttons">
 
- <a href="https://www.github.com/profpan396/" target="_blank">
-        <img
-          src="https://img.shields.io/badge/-@profpan396-junglegreen?style=flat&logo=GitHub&logoColor=black">
-      </a>
-<a href="https://twitter.com/profpan396" target="_blank">
-  <img src="https://img.shields.io/badge/-@profpan396-skyblue?style=flat&logo=Twitter&logoColor=black">
-</a>
- <a href="https://www.linkedin.com/in/profpan396/" target="_blank">
-      <img src="https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black">
- </a> 
- 
- ![](https://visitor-badge.glitch.me/badge?page_id=profpan396.meet-your-classmates)
+  [![Portfolio Badge](https://img.shields.io/badge/-profpan396.github.io-magenta?style=flat&logo=Blackberry&logoColor=black)](https://profpan396.github.io)
+  <br>
+  [![GitHub Badge](https://img.shields.io/badge/-@profpan396-junglegreen?style=flat&logo=GitHub&logoColor=black)](https://www.github.com/profpan396/)
+  [![Twitter Badge](https://img.shields.io/badge/-@profpan396-skyblue?style=flat&logo=Twitter&logoColor=black)](https://twitter.com/profpan396)
+  [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/profpan396/)
+  <br>
+  ![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=profpan396.meet-your-classmates)
+  ![Last Commit](https://img.shields.io/github/last-commit/profpan396/meet-your-classmates)
+  ![Stars](https://img.shields.io/github/stars/profpan396/meet-your-classmates)
+  <br>
+  ![Version](https://img.shields.io/badge/version-1.0-black)
   
- </h3>
- 
- </div>
+</div>
+
 
 ## 📝 Description
 Meet Your Classmates is an Instagram-clone and hub where students can get to know and relate to their peers via completion of short 3-question mini-surveys. By learning about others' backgrounds, previous experiences, and interests, an atmosphere of community is created that is conducive to higher levels of learning and success. 
