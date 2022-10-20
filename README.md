@@ -27,7 +27,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 
 ## :camera: Screenshots
 
-<details open>
+<details>
  <summary> 📊 ERD</summary>
  
  | Description | Screenshot |
