@@ -3,6 +3,7 @@
 # MEET YOUR CLASSMATES
 **Created by [Amar Pan, M.Ed.](https://www.linkedin.com/in/profpan396/)** 
 #### [CLICK TO DEMO](https://meetyourclassmates.herokuapp.com) 
+<br>
  
 </div>
 
