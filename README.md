@@ -12,9 +12,9 @@
   <br>
   [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/profpan396/)
   <br>
-  ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=profpan396.meet-your-classmates)
-  ![Last Commit](https://img.shields.io/github/last-commit/profpan396/meet-your-classmates)
-  ![Stars](https://img.shields.io/github/stars/profpan396/meet-your-classmates)
+  ![Stars](https://img.shields.io/github/stars/profpan396/meet-your-classmates?style=social)
+  ![](https://visitor-badge.laobi.icu/badge?page_id=profpan396.meet-your-classmates)
+  ![Forks](https://img.shields.io/github/forks/profpan396/meet-your-classmates?style=social)
   <br>
   ![Version](https://img.shields.io/badge/version-1.0-black)
   
