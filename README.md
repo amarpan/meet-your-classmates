@@ -36,7 +36,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
  
 </details>
 
-<details open>
+<details>
  <summary> 🎨 Wireframes</summary>
  
  | Description | Screenshot |
