@@ -119,7 +119,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 
 ## ⏭️ Next Steps
 ### Upcoming Features
-- [X] Add gifs to animated sliding buttons
+- [:trident:] Add gifs to animated sliding buttons
 - [ ] Add comment functionality on posts to encourage discussion
 - [ ] Add edit and update functionality for a user's profile
 
