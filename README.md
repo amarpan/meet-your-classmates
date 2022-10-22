@@ -77,7 +77,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 <details open>
 <summary>How to Create a Post</summary>
  
-:one: Type in your answers to each of the 3 randomly-generated mini-survey questions. 
+1. Type in your answers to each of the 3 randomly-generated mini-survey questions. 
  
 :two: Click on "Add Survey" to post your responses so others may see them.
  
