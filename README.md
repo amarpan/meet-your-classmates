@@ -74,7 +74,6 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 ![Canva](https://img.shields.io/badge/-Canva-05122A?style=flat&logo=canva)
 
 ## 🔥 Getting Started
-### 📲 Instructions
 <details open>
 <summary>How to Create a Post</summary>
  
