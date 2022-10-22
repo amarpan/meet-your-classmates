@@ -59,12 +59,13 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 ## 💻 Technologies Used
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript) 
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) 
 ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
 ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
 
 ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)
 ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)
-![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) 
+
 ![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
 ![SemanticUIReact](https://img.shields.io/badge/-Semantic%20UI-05122A?style=flat&logo=semanticuireact)
 ![AWS S3](https://img.shields.io/badge/-AWS_S3-05122A?style=flat&logo=amazons3)
