@@ -1,7 +1,7 @@
 <div align="center" id="header">
  
 # MEET YOUR CLASSMATES
-**Created by [Amar Pan, M.Ed.](https://www.linkedin.com/in/profpan396/)** 
+[Amar Pan](https://www.linkedin.com/in/profpan396/)
 #### [CLICK TO DEMO](https://meetyourclassmates.herokuapp.com) 
 </div>
 
@@ -25,14 +25,14 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 
 ## :camera: Screenshots
 
-<details>
+<!-- <details>
  <summary> 📊 ERD</summary>
  
  | Description | Screenshot |
  |------------ | ------------|
  | <h3 align="center">ERD</h3> | <img src="public/Screenshots/ERD.MYC.png" width="700">
  
-</details>
+</details> -->
 
 <details>
  <summary> 🎨 Wireframes</summary>
