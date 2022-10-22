@@ -71,12 +71,6 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 
 ![SemanticUIReact](https://img.shields.io/badge/-Semantic%20UI-05122A?style=flat&logo=semanticuireact)
 ![AWS S3](https://img.shields.io/badge/-AWS_S3-05122A?style=flat&logo=amazons3)
-![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-05122A?style=flat&logo=jsonwebtokens)
-![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-05122A?style=flat&logo=mongodb)
-
-![Trello](https://img.shields.io/badge/-Trello-05122A?style=flat&logo=trello) 
-![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku)
-![Canva](https://img.shields.io/badge/-Canva-05122A?style=flat&logo=canva)
 
 ## 🔥 Getting Started
 <details open>
