@@ -34,7 +34,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
  
 </details> -->
 
-<details>
+<!-- <details>
  <summary> 🎨 Wireframes</summary>
  
  | Description | Screenshot |
@@ -43,17 +43,13 @@ Meet Your Classmates is a hub where students can get to know their peers via com
  | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/ProfilePage.Wireframe.MYC.png" width="700">
  
  
-</details>
-
-<details open>
- <summary> ⚙️ Functionality</summary>
+</details> -->
  
  | Description | Screenshot |
  |------------ | ------------|
  | <h3 align="center">Feed Page</h3> | <img src="public/Screenshots/FeedPage.png" width="700">
  | <h3 align="center">Profile Page</h3> | <img src="public/Screenshots/ProfilePage.png" width="700">
  
-</details>
 
 
 
