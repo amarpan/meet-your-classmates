@@ -88,7 +88,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 <details>
 <summary>How to Interact With Others' Posts</summary>
  
-:one:  Posts may be "liked" or "disliked" by clicking on the thumbs up or down button on their card.
+1. Posts may be "liked" or "disliked" by clicking on the thumbs up or down button on their card.
  
 :two: To reveal the author of a post, hover over the "Who could it possibly be?" button.
  
