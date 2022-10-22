@@ -1,7 +1,7 @@
 <div align="center" id="header">
  
 # MEET YOUR CLASSMATES
-[Amar Pan](https://www.linkedin.com/in/profpan396/)
+**Created by [Amar Pan](https://www.linkedin.com/in/profpan396/)**
 #### [CLICK TO DEMO](https://meetyourclassmates.herokuapp.com) 
 </div>
 
