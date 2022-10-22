@@ -90,7 +90,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
  
 1. Posts may be "liked" or "disliked" by clicking on the thumbs up or down button on their card.
  
-:two: To reveal the author of a post, hover over the "Who could it possibly be?" button.
+2. To reveal the author of a post, hover over the "Who could it possibly be?" button.
  
 :three: To see more posts by the same user, click on the revealed username and profile picture.
 
