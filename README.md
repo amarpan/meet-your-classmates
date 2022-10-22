@@ -95,8 +95,6 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 
 </details>
 
-### 🔗 Links
-
 <details open>
 <summary>Trello Board</summary>
 <a href="https://trello.com/b/x4ViComX/meet-your-classmates-project-4">https://trello.com/b/x4ViComX/meet-your-classmates-project-4</a>
