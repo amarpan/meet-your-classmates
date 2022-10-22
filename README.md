@@ -82,6 +82,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
 2. Click on "Add Survey" to post your responses so others may see them.
  
 3. Click on the "X" in the bottom-right corner to delete a post. 
+
 </details>
 
 <details>
