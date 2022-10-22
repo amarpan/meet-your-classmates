@@ -92,7 +92,7 @@ Meet Your Classmates is a hub where students can get to know their peers via com
  
 2. To reveal the author of a post, hover over the "Who could it possibly be?" button.
  
-:three: To see more posts by the same user, click on the revealed username and profile picture.
+3. To see more posts by the same user, click on the revealed username and profile picture.
 
 </details>
 
