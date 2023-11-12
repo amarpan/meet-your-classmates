@@ -1,19 +1,19 @@
 <div align="center" id="header">
  
 # MEET YOUR CLASSMATES
-**Created by [Amar Pan](https://www.linkedin.com/in/profpan396/)**
+**Created by [Amar Panjwani](https://www.linkedin.com/in/amarpan/)**
 #### [CLICK TO DEMO](https://meetyourclassmates.herokuapp.com) 
 </div>
 
 <div align="center" id="socialbuttons">
 
- [![Portfolio Badge](https://img.shields.io/badge/-profpan396.github.io-magenta?style=flat&logo=)](https://profpan396.github.io)
+ [![Portfolio Badge](https://img.shields.io/badge/-amarpan.github.io-magenta?style=flat&logo=)](https://amarpan.github.io)
   <br>
-  [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/profpan396/)
+  [![LinkedIn Badge](https://img.shields.io/badge/-@amarpan-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/amarpan/)
   <br>
-  ![Stars](https://img.shields.io/github/stars/profpan396/meet-your-classmates?style=social)
-  ![](https://visitor-badge.laobi.icu/badge?page_id=profpan396.meet-your-classmates)
-  ![Forks](https://img.shields.io/github/forks/profpan396/meet-your-classmates?style=social)
+  ![Stars](https://img.shields.io/github/stars/amarpan/meet-your-classmates?style=social)
+  ![](https://visitor-badge.laobi.icu/badge?page_id=amarpan.meet-your-classmates)
+  ![Forks](https://img.shields.io/github/forks/amarpan/meet-your-classmates?style=social)
   <br>
   ![Version](https://img.shields.io/badge/version-1.0-black)
   
